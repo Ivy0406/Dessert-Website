@@ -1,1 +1,11 @@
-/*# sourceMappingURL=main.css.map */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  outline: 1px dashed chocolate;
+}
+
+body {
+  font-family: "PingFang TC", Semibold;
+}/*# sourceMappingURL=main.css.map */

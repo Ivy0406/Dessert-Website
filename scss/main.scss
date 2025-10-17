@@ -1,0 +1,11 @@
+@import "variables";
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+*{outline: 1px dashed chocolate;}
+
+body{
+    font-family: $font-family-primary;
+};
