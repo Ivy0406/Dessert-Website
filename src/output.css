@@ -175,6 +175,9 @@
   .mr-auto {
     margin-right: auto;
   }
+  .mb-\[30px\] {
+    margin-bottom: 30px;
+  }
   .ml-auto {
     margin-left: auto;
   }
@@ -242,6 +245,15 @@
   .p-\[33px\] {
     padding: 33px;
   }
+  .px-\[33px\] {
+    padding-inline: 33px;
+  }
+  .py-\[33px\] {
+    padding-block: 33px;
+  }
+  .pr-\[33px\] {
+    padding-right: 33px;
+  }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
@@ -281,6 +293,16 @@
   .md\:p-0 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:px-\[42px\] {
+    @media (width >= 48rem) {
+      padding-inline: 42px;
+    }
+  }
+  .md\:pr-\[42px\] {
+    @media (width >= 48rem) {
+      padding-right: 42px;
     }
   }
 }
