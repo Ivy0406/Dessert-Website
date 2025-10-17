@@ -1,5 +1,11 @@
-.title{
-        background-color: aquamarine;
-        height: 70px;
-        width: 500px;
+@import "variables";
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+*{outline: 1px dashed chocolate;}
+
+body{
+    font-family: $font-family-primary;
 };
