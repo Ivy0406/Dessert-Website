@@ -192,6 +192,9 @@
   .mt-\[85px\] {
     margin-top: 85px;
   }
+  .mt-\[95px\] {
+    margin-top: 95px;
+  }
   .mt-\[105px\] {
     margin-top: 105px;
   }
@@ -203,6 +206,9 @@
   }
   .mb-\[60px\] {
     margin-bottom: 60px;
+  }
+  .mb-\[80px\] {
+    margin-bottom: 80px;
   }
   .ml-auto {
     margin-left: auto;
@@ -242,6 +248,9 @@
   }
   .max-h-\[307\.15px\] {
     max-height: 307.15px;
+  }
+  .max-h-\[328px\] {
+    max-height: 328px;
   }
   .max-h-\[460px\] {
     max-height: 460px;
