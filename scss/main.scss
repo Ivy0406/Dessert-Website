@@ -10,3 +10,52 @@ body{
     font-family: $font-family-primary;
 };
 
+
+.label{
+    writing-mode: vertical-rl;
+    padding: 10px;
+    height: 106px;
+    width: 36px;
+    background-color: $color-primary;
+    color: $color-secondary;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 4px;
+}
+
+.product-name{
+    font-size: 20px;
+    color: $color-primary;
+    width: 57%;
+    padding-block: 14px;
+    text-align: center;
+}
+
+.product-price{
+    font-size: 20px;
+    font-weight: 600;
+    color: $color-primary;
+    width: 43%;
+    padding-block: 14px;
+    text-align: center;
+}
+
+.lg-btn{
+    width: full;
+    height: 65px;
+    color: $color-primary;
+    background-color: $color-secondary;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover{
+        background-color: $color-primary;
+        color: $color-secondary;
+    }
+    &:active{
+        background-color: $color-primary;
+        color: $color-secondary;
+    }
+}
+

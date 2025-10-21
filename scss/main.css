@@ -8,4 +8,52 @@
 
 body {
   font-family: "PingFang TC", Semibold;
+}
+
+.label {
+  writing-mode: vertical-rl;
+  padding: 10px;
+  height: 106px;
+  width: 36px;
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 4px;
+}
+
+.product-name {
+  font-size: 20px;
+  color: #3F5D45;
+  width: 57%;
+  padding-block: 14px;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3F5D45;
+  width: 43%;
+  padding-block: 14px;
+  text-align: center;
+}
+
+.lg-btn {
+  width: full;
+  height: 65px;
+  color: #3F5D45;
+  background-color: #EAF0ED;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.lg-btn:hover {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
+.lg-btn:active {
+  background-color: #3F5D45;
+  color: #EAF0ED;
 }/*# sourceMappingURL=main.css.map */
