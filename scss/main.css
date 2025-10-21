@@ -8,4 +8,75 @@
 
 body {
   font-family: "PingFang TC", Semibold;
+}
+
+.label {
+  writing-mode: vertical-rl;
+  padding: 10px;
+  height: 106px;
+  width: 36px;
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 4px;
+}
+
+.product-name {
+  font-size: 20px;
+  color: #3F5D45;
+  width: 57%;
+  padding-block: 14px;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3F5D45;
+  width: 43%;
+  padding-block: 14px;
+  text-align: center;
+}
+
+.lg-btn {
+  width: full;
+  height: 65px;
+  color: #3F5D45;
+  background-color: #EAF0ED;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.lg-btn:hover {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  transition: all 0.5s ease;
+}
+.lg-btn:active {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  transition: all 0.5s ease;
+}
+
+.accent-btn {
+  background-color: #FFE180;
+  color: #3F5D45;
+  cursor: pointer;
+}
+.accent-btn:hover {
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+.key-in {
+  background-color: #EAF0ED;
+}
+.key-in:hover {
+  border: 3px solid #FFE180;
+}
+
+.information-font {
+  font-family: "Helvetica Neue";
 }/*# sourceMappingURL=main.css.map */
