@@ -29,6 +29,7 @@ body {
   width: 57%;
   padding-block: 14px;
   text-align: center;
+  border: 1px solid #EAF0ED;
 }
 
 .product-price {
@@ -38,6 +39,7 @@ body {
   width: 43%;
   padding-block: 14px;
   text-align: center;
+  border: 1px solid #EAF0ED;
 }
 
 .lg-btn {
