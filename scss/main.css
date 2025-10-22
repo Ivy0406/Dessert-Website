@@ -79,4 +79,56 @@ body {
 
 .information-font {
   font-family: "Helvetica Neue";
+}
+
+.nav-title {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #3F5D45;
+  border: 1px solid #EAF0ED;
+  height: 65px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav-btn:hover {
+  background-color: #EAF0ED;
+  transition: all 0.5s ease;
+}
+.nav-btn:active {
+  background-color: #EAF0ED;
+  transition: all 0.5s ease;
+}
+
+.page-btn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #3F5D45;
+  font-size: 20px;
+  border: 1px solid #EAF0ED;
+}
+.page-btn:hover {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
+.page-btn:active {
+  background-color: #3F5D45;
+  color: #EAF0ED;
 }/*# sourceMappingURL=main.css.map */
