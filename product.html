@@ -1,33 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sweetaste產品頁</title>
-    <link href="./src/output.css" rel="stylesheet">
-    <link href="./scss/main.css" rel="stylesheet">
-</head>
-<body>
-    <header class="flex justify-between w-full max-w-[1024px] h-10 px-[33px] md:px-[42px] mr-auto ml-auto mt-[30px] mb-[30px] items-center">
-        <button class="hover:cursor-pointer block md:hidden" >
-            <img src="./images/dehaze-24px.png" alt="漢堡選單">
-        </button>
-        <picture class="w-[200px] h-10 items-center">
-            <source media="(max-width:768px)" srcset="./images\logotype-lg-dark.svg">
-            <img class="h-10" src="./images/logo-all-dark.svg" alt="品牌Logo">
-        </picture>
-        <nav class="max-w-[300px] flex justify-between gap-[79px] items-center">
-            <ul class="w-[215px] hidden md:flex justify-between items-center">
-                <li class="text-[#3F5D45] font-semibold"><a href="index.html">首頁</a></li>
-                <li class="text-[#3F5D45] font-semibold"><a href="product.html">甜點</a></li>
-                <li class="text-[#3F5D45] font-semibold"><a href="login.html">登入</a></li>
-            </ul>
-            <div class="w-[24px] ">
-                <a href="cart.html"><img src="./images/shopping_cart.png" alt="前往購物車"></a>
-            </div>
-        </nav>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./scss/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header
+      class="flex justify-between w-full max-w-[1024px] h-10 px-[33px] md:px-[42px] mr-auto ml-auto mt-[30px] mb-[30px] items-center"
+    >
+      <button class="hover:cursor-pointer block md:hidden">
+        <img src="./images/dehaze-24px.png" alt="漢堡選單" />
+      </button>
+      <picture class="w-[200px] h-10 items-center">
+        <source
+          media="(max-width:768px)"
+          srcset="./images\logotype-lg-dark.svg"
+        />
+        <img class="h-10" src="./images/logo-all-dark.svg" alt="品牌Logo" />
+      </picture>
+      <nav class="max-w-[300px] flex justify-between gap-[79px] items-center">
+        <ul class="w-[215px] hidden md:flex justify-between items-center">
+          <li class="text-[#3F5D45] font-semibold">
+            <a href="index.html">首頁</a>
+          </li>
+          <li class="text-[#3F5D45] font-semibold">
+            <a href="product.html">甜點</a>
+          </li>
+          <li class="text-[#3F5D45] font-semibold">
+            <a href="login.html">登入</a>
+          </li>
+        </ul>
+        <div class="w-[24px]">
+          <a href="cart.html"
+            ><img src="./images/shopping_cart.png" alt="前往購物車"
+          /></a>
+        </div>
+      </nav>
     </header>
 
-<script src="./js/all.js"></script>
-</body>
+    <main class="max-w-[1024px] min-w-[375px] w-full mx-auto mb-[60px]">
+      <section
+        class="w-full max-w-[940px] h-[496px] mx-auto flex justify-center overflow-hidden relative"
+      >
+        <img
+          class="w-full h-full object-cover"
+          src="https://bit.ly/2Qodh3Z"
+          alt="主視覺"
+        />
+        <img
+          class="absolute top-10 right-10 w-[89px] h-[328px]"
+          src="./images/sm-今天是個吃甜點的好日子@2x.png"
+          alt="今天是個吃甜點的好日子"
+        />
+      </section>
+
+      <section class="max-w-[940px] mx-auto flex justify-between mt-[60px] max-[769px]:flex-col max-[769px]:items-center">
+        <nav class="min-w-[300px] max-[769px]:w-full max-[769px]:mb-[30px]">
+          <ul>
+            <li class="nav-title"><span>甜點類別</span></li>
+            <li class="nav-btn"><a>所有甜點(48)</a></li>
+            <li class="nav-btn"><a>本日精選(10)</a></li>
+            <li class="nav-btn"><a>人氣推薦(26)</a></li>
+            <li class="nav-btn"><a>新品上市(12)</a></li>
+          </ul>
+        </nav>
+
+        <section class="w-[620px] max-[769px]:w-[315px] ">
+          <ul class="grid grid-cols-2 gap-5 max-[769px]:grid-cols-1">
+            <li>
+              <figure class="relative">
+                <div class="label absolute z-10 left-5">
+                  <span>本日精選</span>
+                </div>
+                <img
+                  class="absolute z-10 right-5 top-[19px] hover:scale-150 cursor-pointer"
+                  src="./images/favorite_border.png"
+                  alt="加入我的收藏"
+                />
+                <img
+                  class="h-[315px] w-full object-cover"
+                  src="https://bit.ly/2zBjQuq"
+                />
+              </figure>
+              <figcaption class="flex">
+                <p class="product-name">焦糖馬卡龍</p>
+                <p class="product-price">NT$450</p>
+              </figcaption>
+              <button class="lg-btn w-full">加入購物車</button>
+            </li>
+            <li>
+              <figure class="relative">
+                <div class="label absolute z-10 left-5">
+                  <span>本日精選</span>
+                </div>
+                <img
+                  class="absolute z-10 right-5 top-[19px] hover:scale-150 cursor-pointer"
+                  src="./images/favorite_border.png"
+                  alt="加入我的收藏"
+                />
+                <img
+                  class="h-[315px] w-full object-cover"
+                  src="https://bit.ly/2zBjQuq"
+                />
+              </figure>
+              <figcaption class="flex">
+                <p class="product-name">焦糖馬卡龍</p>
+                <p class="product-price">NT$450</p>
+              </figcaption>
+              <button class="lg-btn w-full">加入購物車</button>
+            </li>
+            <li>
+              <figure class="relative">
+                <div class="label absolute z-10 left-5">
+                  <span>本日精選</span>
+                </div>
+                <img
+                  class="absolute z-10 right-5 top-[19px] hover:scale-150 cursor-pointer"
+                  src="./images/favorite_border.png"
+                  alt="加入我的收藏"
+                />
+                <img
+                  class="h-[315px] w-full object-cover"
+                  src="https://bit.ly/2zBjQuq"
+                />
+              </figure>
+              <figcaption class="flex">
+                <p class="product-name">焦糖馬卡龍</p>
+                <p class="product-price">NT$450</p>
+              </figcaption>
+              <button class="lg-btn w-full">加入購物車</button>
+            </li>
+            <li>
+              <figure class="relative">
+                <div class="label absolute z-10 left-5">
+                  <span>本日精選</span>
+                </div>
+                <img
+                  class="absolute z-10 right-5 top-[19px] hover:scale-150 cursor-pointer"
+                  src="./images/favorite_border.png"
+                  alt="加入我的收藏"
+                />
+                <img
+                  class="h-[315px] w-full object-cover"
+                  src="https://bit.ly/2zBjQuq"
+                />
+              </figure>
+              <figcaption class="flex">
+                <p class="product-name">焦糖馬卡龍</p>
+                <p class="product-price">NT$450</p>
+              </figcaption>
+              <button class="lg-btn w-full">加入購物車</button>
+            </li>
+            <li>
+              <figure class="relative">
+                <div class="label absolute z-10 left-5">
+                  <span>本日精選</span>
+                </div>
+                <img
+                  class="absolute z-10 right-5 top-[19px] hover:scale-150 cursor-pointer"
+                  src="./images/favorite_border.png"
+                  alt="加入我的收藏"
+                />
+                <img
+                  class="h-[315px] w-full object-cover"
+                  src="https://bit.ly/2zBjQuq"
+                />
+              </figure>
+              <figcaption class="flex">
+                <p class="product-name">焦糖馬卡龍</p>
+                <p class="product-price">NT$450</p>
+              </figcaption>
+              <button class="lg-btn w-full">加入購物車</button>
+            </li>
+            <li>
+              <figure class="relative">
+                <div class="label absolute z-10 left-5">
+                  <span>本日精選</span>
+                </div>
+                <img
+                  class="absolute z-10 right-5 top-[19px] hover:scale-150 cursor-pointer"
+                  src="./images/favorite_border.png"
+                  alt="加入我的收藏"
+                />
+                <img
+                  class="h-[315px] w-full object-cover"
+                  src="https://bit.ly/2zBjQuq"
+                />
+              </figure>
+              <figcaption class="flex">
+                <p class="product-name">焦糖馬卡龍</p>
+                <p class="product-price">NT$450</p>
+              </figcaption>
+              <button class="lg-btn w-full">加入購物車</button>
+            </li>
+          </ul>
+
+          <ul class="flex justify-end mt-[30px] max-[769px]:justify-center">
+            <li>
+              <button
+                class="w-[60px] h-[60px] flex justify-center items-center cursor-pointer border border-[#EAF0ED]"
+                value="prev"
+              >
+                <img class="w-6 h-6" src="./images/arrow_left.png" />
+              </button>
+            </li>
+            <li>
+              <button
+                class="page-btn"
+                value="1"
+              >
+                1
+              </button>
+            </li>
+            <li>
+              <button
+                class="page-btn"
+                value="2"
+              >
+                2
+              </button>
+            </li>
+            <li>
+              <button
+                class="page-btn"
+                value="3"
+              >
+                3
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-[60px] h-[60px] flex justify-center items-center cursor-pointer border border-[#EAF0ED]"
+                value="next"
+              >
+                <img src="./images/arrow_right.png" />
+              </button>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <section
+        class="flex items-center h-[116px] bg-[#3F5D45] max-[769px]:h-[186px]"
+      >
+        <div
+          class="flex justify-between items-center w-[780px] mx-auto max-[769px]:flex-col h-[122px]"
+        >
+          <div class="flex justify-between w-[276px]">
+            <img
+              class="w-[40px] h-[40px]"
+              src="./images/logo-light@2x.png"
+              alt="Sweetaste品牌Logo"
+            />
+            <p class="flex items-center justify-center text-[#EAF0ED] text-2xl">
+              訂閱你我的甜蜜郵件
+            </p>
+          </div>
+          <div
+            class="relative flex bg-[#EAF0ED] justify-end w-[380px] h-[56px] max-[769px]:w-[315px]"
+          >
+            <input class="key-in w-[272px]" type="text" />
+            <img
+              class="absolute top-4 left-5 w-[24px] h-[24px]"
+              src="./images/mail-24px.png"
+              alt="訂閱信箱輸入欄位"
+            />
+            <button
+              class="accent-btn w-[64px] flex justify-center items-center"
+              type="submit"
+            >
+              <img
+                src="./images/arrow_forward-24px.png"
+                alt="提交訂閱電子信箱"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-[341px] bg-[#EAF0ED] flex items-center">
+        <div class="flex justify-between items-center w-full max-w-[780px] min-w-[315px] mx-auto max-[769px]:block max-[769px]:w-[315px]">
+          <div>
+            <img
+              class="w-[171px] h-[27px] mb-[116px] max-[769px]:mb-[40px]"
+              src="./images/logotype-lg-dark.svg"
+              alt="Sweetaste品牌Logo"
+            />
+            <div class="text-[#3F5D45] information-font mb-[30px]">
+              <p>07-1234-5678</p>
+              <p>sweetaste@email.com</p>
+              <p>800 高雄市新興區幸福路 520 號</p>
+            </div>
+            <div class="flex justify-between w-[72px] max-[769px]:mb-[30px]">
+              <a href="#"
+                ><img
+                  class="w-[32px] h-[32px]"
+                  src="./images/ic-line@.svg"
+                  alt="官方LINE連結"
+              /></a>
+              <a href="#"
+                ><img
+                  class="w-[32px] h-[32px]"
+                  src="./images/ic-facebook.svg"
+                  alt="臉書粉專連結"
+              /></a>
+            </div>
+          </div>
+          <div class="w-[258px] h-[281px] flex flex-col justify-between items-end max-[769px]:h-full">
+            <img
+              class="w-[60px] h-[218px] max-[769px]:hidden"
+              src="./images/sm-今天是個吃甜點的好日子@2x.png"
+              alt="今天是個吃甜點的好日子。"
+            />
+            <p class="text-[#3F5D45]">© 2018 Sweetaste* All Rights Reserved</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./js/all.js"></script>
+  </body>
 </html>
