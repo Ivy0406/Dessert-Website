@@ -16,6 +16,8 @@
     --font-weight-light: 300;
     --font-weight-semibold: 600;
     --tracking-widest: 0.1em;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -235,6 +237,9 @@
   .mt-\[30px\] {
     margin-top: 30px;
   }
+  .mt-\[60px\] {
+    margin-top: 60px;
+  }
   .mt-\[80px\] {
     margin-top: 80px;
   }
@@ -316,11 +321,17 @@
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .hidden {
     display: none;
   }
   .table {
     display: table;
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -339,6 +350,9 @@
   }
   .h-\[56px\] {
     height: 56px;
+  }
+  .h-\[60px\] {
+    height: 60px;
   }
   .h-\[116px\] {
     height: 116px;
@@ -384,6 +398,9 @@
   }
   .max-h-\[460px\] {
     max-height: 460px;
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
   }
   .w-11 {
     width: calc(var(--spacing) * 11);
@@ -445,6 +462,9 @@
   .w-\[380px\] {
     width: 380px;
   }
+  .w-\[620px\] {
+    width: 620px;
+  }
   .w-\[780px\] {
     width: 780px;
   }
@@ -502,8 +522,14 @@
   .cursor-pointer {
     cursor: pointer;
   }
+  .cursor-progress {
+    cursor: progress;
+  }
   .resize {
     resize: both;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -526,6 +552,9 @@
   .justify-end {
     justify-content: flex-end;
   }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .gap-\[79px\] {
     gap: 79px;
   }
@@ -539,6 +568,9 @@
   .border-y {
     border-block-style: var(--tw-border-style);
     border-block-width: 1px;
+  }
+  .border-\[\#EAF0ED\] {
+    border-color: #EAF0ED;
   }
   .bg-\[\#3F5D45\] {
     background-color: #3F5D45;
@@ -576,6 +608,9 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-\[20px\] {
+    font-size: 20px;
   }
   .font-light {
     --tw-font-weight: var(--font-weight-light);
@@ -616,6 +651,11 @@
   .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .\[text-orientation\:upright\] {
     text-orientation: upright;
