@@ -42,7 +42,7 @@
     </header>
 
     <main class="max-w-[1024px] mx-auto">
-      <herosection class="relative mb-[60px] w-full mx-auto max-w-[1024px]">
+      <section class="relative w-full mx-auto max-w-[1024px]">
         <picture class="h-[496px] overflow-hidden z-0">
           <img
             class="block w-full max-w-[940px] mx-auto h-[496px] object-cover"
@@ -84,14 +84,15 @@
             >
           </li>
         </ul>
-      </herosection>
+      </section>
 
-      <article>
+      <article class="mt-[60px] max-[769px]:hidden">
         <section class="bg-[#EAF0ED] h-[420px] mt-[80px]">
           <div class="flex justify-between mx-auto w-full max-w-[940px]">
             <img
               class="w-full h-full max-w-[460px] max-h-[460px] object-cover -mt-[20px] md-[20px]"
               src="https://bit.ly/2xPn7Eq"
+              alt="小鬆餅"
             />
             <div class="flex justify-between w-full max-w-[425px] h-[420px]">
               <div
@@ -122,6 +123,7 @@
             <img
               class="w-full h-full max-w-[460px] max-h-[460px] object-cover -mt-[20px] md-[20px]"
               src="https://bit.ly/2zzAQS4"
+              alt="水果燕麥粥"
             />
             <div class="flex justify-between w-full max-w-[425px] h-[420px]">
               <div
@@ -148,6 +150,63 @@
           <img
             class="max-w-[89px] max-h-[328px]"
             src="./images/lg-想吃甜點是不需要理由的@2x.png"
+          />
+        </section>
+      </article>
+
+      <!-- 行動版文章區塊 -->
+      <article class="md:hidden">
+        <section class="w-full flex flex-col items-center">
+          <img
+            class="w-[196px] h-[60px] my-[30px]"
+            src="./images/sm-橫式-為什麼選擇了做甜點@2x.png"
+            alt="為什麼選擇了做甜點"
+          />
+          <img
+            class="w-full max-h-[250px] object-cover"
+            src="https://bit.ly/2xPn7Eq"
+            alt="小鬆餅"
+          />
+          <div class="bg-[#EAF0ED] w-full flex justify-center py-[30px]">
+            <div class="w-[315px] leading-8 text-[#8DA291]">
+              <p>
+                青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+                <br>
+                <br>
+                是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="w-full flex flex-col items-center">
+          <img
+            class="w-[196px] h-[60px] my-[30px]"
+            src="./images/sm-橫式-為什麼一定要吃甜點@2x.png"
+            alt="為什麼一定要吃甜點"
+          />
+          <img
+            class="w-full max-h-[250px] object-cover"
+            src="https://bit.ly/2zzAQS4"
+            alt="水果燕麥粥"
+          />
+          <div class="bg-[#EAF0ED] w-full flex justify-center py-[30px]">
+            <div class="w-[315px] leading-8 text-[#8DA291]">
+              <p>
+                青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+                <br>
+                <br>
+                是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="w-full flex flex-col items-center">
+          <img
+            class="w-[226px] h-[60px] my-[30px]"
+            src="./images/sm-橫式-想吃甜點是不需要理由的@2x.png"
+            alt="想吃甜點是不需要理由的"
           />
         </section>
       </article>
@@ -263,7 +322,9 @@
       </section>
 
       <section class="h-[341px] bg-[#EAF0ED] flex items-center">
-        <div class="flex justify-between items-center w-full max-w-[780px] min-w-[315px] mx-auto max-[769px]:block max-[769px]:w-[315px]">
+        <div
+          class="flex justify-between items-center w-full max-w-[780px] min-w-[315px] mx-auto max-[769px]:block max-[769px]:w-[315px]"
+        >
           <div>
             <img
               class="w-[171px] h-[27px] mb-[116px] max-[769px]:mb-[40px]"
@@ -290,7 +351,9 @@
               /></a>
             </div>
           </div>
-          <div class="w-[258px] h-[281px] flex flex-col justify-between items-end max-[769px]:h-full">
+          <div
+            class="w-[258px] h-[281px] flex flex-col justify-between items-end max-[769px]:h-full"
+          >
             <img
               class="w-[60px] h-[218px] max-[769px]:hidden"
               src="./images/sm-今天是個吃甜點的好日子@2x.png"
