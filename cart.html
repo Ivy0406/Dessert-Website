@@ -1,39 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sweetaste購物車</title>
-    <link href="./src/output.css" rel="stylesheet">
-    <link href="./scss/main.css" rel="stylesheet">
-</head>
-<body>
-     <header class="flex justify-between w-full max-w-[1024px] h-10 px-[33px] md:px-[42px] mr-auto ml-auto mt-[30px] mb-[30px] items-center">
-        <button class="hover:cursor-pointer block md:hidden" >
-            <img src="./images/dehaze-24px.png" alt="漢堡選單">
-        </button>
-        <picture class="w-[200px] h-10 items-center">
-            <source media="(max-width:768px)" srcset="./images\logotype-lg-dark.svg">
-            <img class="h-10" src="./images/logo-all-dark.svg" alt="品牌Logo">
-        </picture>
-        <nav class="max-w-[300px] flex justify-between gap-[79px] items-center">
-            <ul class="w-[215px] hidden md:flex justify-between items-center">
-                <li class="text-[#3F5D45] font-semibold"><a href="index.html">首頁</a></li>
-                <li class="text-[#3F5D45] font-semibold"><a href="product.html">甜點</a></li>
-                <li class="text-[#3F5D45] font-semibold"><a href="login.html">登入</a></li>
-            </ul>
-            <div class="w-[24px] ">
-                <a href="cart.html"><img src="./images/shopping_cart.png" alt="前往購物車"></a>
-            </div>
-        </nav>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./scss/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header
+      class="flex justify-between w-full max-w-[1024px] h-10 px-[33px] md:px-[42px] mr-auto ml-auto mt-[30px] mb-[30px] items-center"
+    >
+      <button class="hover:cursor-pointer block md:hidden">
+        <img src="./images/dehaze-24px.png" alt="漢堡選單" />
+      </button>
+      <picture class="w-[200px] h-10 items-center">
+        <source
+          media="(max-width:768px)"
+          srcset="./images\logotype-lg-dark.svg"
+        />
+        <img class="h-10" src="./images/logo-all-dark.svg" alt="品牌Logo" />
+      </picture>
+      <nav class="max-w-[300px] flex justify-between gap-[79px] items-center">
+        <ul class="w-[215px] hidden md:flex justify-between items-center">
+          <li class="text-[#3F5D45] font-semibold">
+            <a href="index.html">首頁</a>
+          </li>
+          <li class="text-[#3F5D45] font-semibold">
+            <a href="product.html">甜點</a>
+          </li>
+          <li class="text-[#3F5D45] font-semibold">
+            <a href="login.html">登入</a>
+          </li>
+        </ul>
+        <div class="w-[24px]">
+          <a href="cart.html"
+            ><img src="./images/shopping_cart.png" alt="前往購物車"
+          /></a>
+        </div>
+      </nav>
     </header>
 
-    <main>
-        
+    <main class="max-w-[1024px] min-w-[375px] mx-auto">
+      <section class="flex flex-col items-center w-full">
+        <h1
+          class="flex justify-center items-center w-full h-[65px] bg-[#EAF0ED] text-2xl font-semibold text-[#3F5D45]"
+        >
+          您的購物車
+        </h1>
+        <ul class="w-full p-[30px]">
+          <li class="w-full">
+            <div class="flex min-h-[106px] pb-[8.5px]">
+              <img
+                class="w-[49%] aspect-[1.5] object-cover"
+                src="https://bit.ly/2QvsT63"
+                alt="草莓優格碗"
+              />
+              <div class="w-[51%] pl-4 flex flex-col justify-between">
+                <div class="text-[#3F5D45]">
+                  <p class="text-[20px]">草莓優格碗</p>
+                  <p>NT$ 450</p>
+                </div>
+                <ul class="flex w-full">
+                  <li class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]" ><span>-</span></li>
+                  <li class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"><span>2</span></li>
+                  <li class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"><span>+</span></li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-end text-[#3F5D45] text-[20px] font-semibold h-[45px] bor-y border-[#EAF0ED]"
+            >
+              <span>NT$ 900</span>
+            </div>
+          </li>
+
+          <li class="w-full">
+            <div class="flex min-h-[106px] mt-[30.5px] pb-[8.5px]">
+              <img
+                class="w-[49%] aspect-[1.5] object-cover"
+                src="https://bit.ly/2QvsT63"
+                alt="草莓優格碗"
+              />
+              <div class="w-[51%] pl-4 flex flex-col justify-between">
+                <div class="text-[#3F5D45]">
+                  <p class="text-[20px]">草莓優格碗</p>
+                  <p>NT$ 450</p>
+                </div>
+                <ul class="flex w-full">
+                  <li class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]" ><span>-</span></li>
+                  <li class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"><span>2</span></li>
+                  <li class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"><span>+</span></li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-end text-[#3F5D45] text-[20px] font-semibold h-[45px] bor-y border-[#EAF0ED]"
+            >
+              <span>NT$ 900</span>
+            </div>
+          </li>
+
+          <li class="w-full">
+            <div class="flex min-h-[106px] mt-[30.5px] pb-[8.5px]">
+              <img
+                class="w-[49%] aspect-[1.5] object-cover"
+                src="https://bit.ly/2QvsT63"
+                alt="草莓優格碗"
+              />
+              <div class="w-[51%] pl-4 flex flex-col justify-between">
+                <div class="text-[#3F5D45]">
+                  <p class="text-[20px]">草莓優格碗</p>
+                  <p>NT$ 450</p>
+                </div>
+                <ul class="flex w-full">
+                  <li class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]" ><span>-</span></li>
+                  <li class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"><span>2</span></li>
+                  <li class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"><span>+</span></li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-end text-[#3F5D45] text-[20px] font-semibold h-[45px] bor-y border-[#EAF0ED]"
+            >
+              <span>NT$ 900</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="flex flex-col items-center w-full min-w-[375px] px-[30px]">
+        <h2
+          class="flex justify-center items-center w-full h-[65px] bg-[#EAF0ED] text-2xl font-semibold text-[#3F5D45] mb-4"
+        >
+          訂單摘要
+        </h2>
+        <dl class="grid grid-cols-2 w-full text-[#3F5D45]">
+          <dt>小計</dt>
+          <dd class="text-right">NT$ 2,700</dd>
+
+          <dt>運費</dt>
+          <dd class="text-right">NT$ 300</dd>
+
+          <dt class="text-[20px] font-semibold">總計</dt>
+          <dd class="text-right text-[20px] font-semibold">NT$ 3,000</dd>
+        </dl>
+
+        <button class="accent-btn w-full h-full py-4 mt-4">
+          <span>結帳</span>
+        </button>
+      </section>
     </main>
-
-
-
 
     <footer class="max-w-[1024px] mx-auto">
       <section
@@ -118,6 +234,6 @@
       </section>
     </footer>
 
-<script src="./js/all.js"></script>
-</body>
+    <script src="./js/all.js"></script>
+  </body>
 </html>
