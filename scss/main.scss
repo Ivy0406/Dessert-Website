@@ -68,10 +68,16 @@ body{
     background-color: $color-accent;
     color: $color-primary;
     cursor: pointer;
+    color: $color-primary;
+    font-weight: 600;
+    font-size: 24px;
     &:hover{
         box-shadow: 0 5px 18px rgba($color: black, $alpha: 0.8);
         transition: all 0.3s ease;
-
+    }
+    &:active{
+        box-shadow: 0 5px 18px rgba($color: black, $alpha: 0.8);
+        transition: all 0.3s ease;
     }
 }
 
@@ -135,6 +141,32 @@ body{
     &:active{
         background-color: $color-primary;
         color:$color-secondary;
+    }
+}
+
+::placeholder { 
+  color: $color-text;
+}
+
+
+
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: $color-secondary;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    &:checked{
+        background-color: $color-accent;
+        &::after{
+            content:'✓';
+            position: absolute;
+            top:-2.8px;
+            left: 2px;
+            color: $color-primary;
+        };
     }
 }
 
