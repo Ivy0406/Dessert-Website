@@ -7,6 +7,7 @@
     <link href="./src/output.css" rel="stylesheet" />
     <link href="./scss/main.css" rel="stylesheet" />
   </head>
+
   <body>
     <header
       class="flex justify-between w-full max-w-[1024px] h-10 px-[33px] md:px-[42px] mr-auto ml-auto mt-[30px] mb-[30px] items-center"
@@ -41,26 +42,57 @@
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h1>會員登入</h1>
+    <main class="max-w-[1024px] min-w-[375px] mx-auto items-center  justify-center md:flex md: pb-[60px] md:pt-[10px]">
+      <section
+        class="bg-[#3F5D45] h-[110px] flex justify-center items-center md:hidden"
+      >
+        <h1 class="text-4xl font-semibold text-[#EAF0ED]">會員登入</h1>
       </section>
 
-      <section>
-        <ul>
-          <li>
-            <a><img src="" alt="" /></a>
+      <section
+        class="bg-[#EAF0ED] h-[116px] flex items-center justify-center md:hidden"
+      >
+        <ul class="w-[315px] h-[56px] flex items-center">
+          <li class="w-[33.3%] h-full flex justify-center">
+            <a
+              class="bg-[#FFFFFF] w-full h-full flex justify-center items-center hover:bg-[#FFE180] active:bg-[#FFE180]"
+              href="#"
+              ><img
+                class="w-[83.4px]"
+                src="./images/ic-facebook-logotype@2x.png"
+                alt="用臉書帳號登入"
+            /></a>
           </li>
-          <li>
-            <a><img src="" alt="" /></a>
+          <li
+            class="w-[33.3%] h-full flex justify-center border-x border-[#EAF0ED]"
+          >
+            <a
+              class="bg-[#FFFFFF] w-full h-full flex justify-center items-center hover:bg-[#FFE180] active:bg-[#FFE180]"
+              href="#"
+              ><img
+                class="w-[83.4px]"
+                src="./images/ic-google@2x.png"
+                alt="用Google帳號登入"
+            /></a>
           </li>
-          <li>
-            <a><img src="" alt="" /></a>
+          <li class="w-[33.3%] h-full flex justify-center">
+            <a
+              class="bg-[#FFFFFF] w-full h-full flex justify-center items-center hover:bg-[#FFE180] active:bg-[#FFE180]"
+              href="#"
+              ><img
+                class="w-[83.4px]"
+                src="./images/ic-yahoo@2x.png"
+                alt="用Yahoo帳號登入"
+            /></a>
           </li>
         </ul>
       </section>
 
-      <section class="flex flex-col items-center pt-[30px] bg-[#3F5D45]">
+      <section class="flex flex-col items-center pt-10 bg-[#3F5D45] md:min-w-[390px]">
+        
+        <!-- 網頁版標題 -->
+        <h1 class=" hidden text-4xl font-semibold text-[#EAF0ED] mb-10 md:block">會員登入</h1> 
+
         <ul class="flex flex-col items-center h-[128px] justify-between">
           <li>
             <div
@@ -95,13 +127,56 @@
             </div>
           </li>
         </ul>
-        <label class="w-[315px] flex items-center mt-[13px] mb-[27px] text-[#EAF0ED] font-semibold">
+        <label
+          class="w-[315px] flex items-center mt-[13px] mb-[27px] text-[#EAF0ED] font-semibold"
+        >
           <input class="w-4 h-4 mr-2" type="checkbox" />
           <span>記住我</span>
         </label>
         <button class="accent-btn w-full py-4">
           <span>登入帳號</span>
         </button>
+      </section>
+
+      <!-- 網頁版登入選項 -->
+      <section
+        class="hidden flex-col bg-[#EAF0ED] w-[390px] min-h-[350px] items-center justify-center md:flex"
+      >
+        <h2 class="text-[#8DA291] text-2xl mb-9">—— 連結社群帳號 ——</h2>
+        <ul class="w-[330px] h-[200px] flex flex-col justify-between items-center">
+          <li class="w-full h-[56px] flex justify-center">
+            <a
+              class="bg-[#FFFFFF] w-full h-full flex justify-center items-center hover:bg-[#FFE180] active:bg-[#FFE180]"
+              href="#"
+              ><img
+                class="w-[108px]"
+                src="./images/ic-facebook-logotype@2x.png"
+                alt="用臉書帳號登入"
+            /></a>
+          </li>
+          <li
+            class="w-full h-[56px] flex justify-center border-x border-[#EAF0ED]"
+          >
+            <a
+              class="bg-[#FFFFFF] w-full h-full flex justify-center items-center hover:bg-[#FFE180] active:bg-[#FFE180]"
+              href="#"
+              ><img
+                class="w-[108px]"
+                src="./images/ic-google@2x.png"
+                alt="用Google帳號登入"
+            /></a>
+          </li>
+          <li class="w-full h-[56px] flex justify-center">
+            <a
+              class="bg-[#FFFFFF] w-full h-full flex justify-center items-center hover:bg-[#FFE180] active:bg-[#FFE180]"
+              href="#"
+              ><img
+                class="w-[108px]"
+                src="./images/ic-yahoo@2x.png"
+                alt="用Yahoo帳號登入"
+            /></a>
+          </li>
+        </ul>
       </section>
     </main>
 
