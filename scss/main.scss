@@ -180,12 +180,16 @@ input[type="checkbox"]{
         justify-content: center;
         position: relative;
 
+        &.first{
+            justify-content: start;
+        };
+
         &::before{
         content: "";
         width: 16.45px;
         aspect-ratio: 1/1;
         border-radius: 50%;
-        border: 1px solid $color-secondary;
+        border: 1px solid $color-text;
         background-color: $color-primary;
         z-index: 2;
         };
@@ -193,14 +197,14 @@ input[type="checkbox"]{
         &:not(:first-child)::after{
             content: "";
             height: 1px;
-            background-color: $color-secondary;
-            width: 100%;
+            background-color: $color-text;
+            width: 200%;
             position: absolute;
             top:50%;
-            right: 50%;
+            right: 0;
             z-index: 1;
-            transform: translateY(-50%);
         };
+
 
         &.active{
             &::before{
@@ -211,6 +215,18 @@ input[type="checkbox"]{
             };
 
         };
+
+        &.last{
+            justify-content: end
+        }
+        
+    };
+}
+
+@media(min:768px){
+    .stepper{
+        width: 186px;
+        height: 20px;
     };
 }
 
