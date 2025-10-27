@@ -244,6 +244,80 @@ input[type="checkbox"]{
 }
 
 
+.stepper-dark{
+    display: flex;
+    width: 190px;
+    height: 20px;
+    .stepper-dark-item{
+        display: flex;
+        flex:1;
+        justify-content: center;
+        position: relative;
+
+        &.first{
+            justify-content: start;
+        };
+
+        &::before{
+        content: "";
+        width: 20px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        border: 1px solid $color-primary;
+        background-color: $color-secondary;
+        z-index: 2;
+        };
+
+        &:not(:first-child)::after{
+            content: "";
+            height: 1px;
+            background-color: $color-primary;
+            width: 200%;
+            position: absolute;
+            top:50%;
+            right: 0;
+            z-index: 1;
+        };
+
+
+        &.active{
+            &::before{
+                background-color: $color-primary;
+                border-width: 2px;
+                border-color: $color-secondary;
+                box-shadow: 0 0 0 1px $color-primary;
+            };
+
+        };
+
+        &.check{
+            &::before{
+                background-color: $color-primary;
+                content: '✓';
+                display: flex;
+                color: $color-secondary;
+                justify-content: center;
+                align-items: center;
+                font-weight: 600;
+            };
+
+        }
+
+        &.last{
+            justify-content: end
+        }
+        
+    };
+}
+
+@media(min:768px){
+    .stepper-dark{
+        width: 190px;
+        height: 20px;
+    };
+}
+
+
 select{
     color:$color-text;
     option{
