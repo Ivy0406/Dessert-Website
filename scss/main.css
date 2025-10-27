@@ -170,4 +170,42 @@ input[type=checkbox]:checked::after {
   top: -2.8px;
   left: 2px;
   color: #3F5D45;
+}
+
+.stepper {
+  display: flex;
+  width: 153px;
+  height: 16.45px;
+}
+.stepper .stepper-item {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  position: relative;
+}
+.stepper .stepper-item::before {
+  content: "";
+  width: 16.45px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid #EAF0ED;
+  background-color: #3F5D45;
+  z-index: 2;
+}
+.stepper .stepper-item:not(:first-child)::after {
+  content: "";
+  height: 1px;
+  background-color: #EAF0ED;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+.stepper .stepper-item.active::before {
+  background-color: #EAF0ED;
+  border-width: 2px;
+  border-color: #3F5D45;
+  box-shadow: 0 0 0 1px #EAF0ED;
 }/*# sourceMappingURL=main.css.map */

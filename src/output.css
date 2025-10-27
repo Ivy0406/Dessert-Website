@@ -7,8 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-200: oklch(92.4% 0.12 95.746);
-    --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -179,6 +177,9 @@
   .relative {
     position: relative;
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .top-4 {
     top: calc(var(--spacing) * 4);
   }
@@ -203,11 +204,11 @@
   .z-1 {
     z-index: 1;
   }
+  .z-3 {
+    z-index: 3;
+  }
   .z-10 {
     z-index: 10;
-  }
-  .mx-\[18px\] {
-    margin-inline: 18px;
   }
   .mx-auto {
     margin-inline: auto;
@@ -217,6 +218,9 @@
   }
   .-mt-\[20px\] {
     margin-top: calc(20px * -1);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
@@ -245,6 +249,9 @@
   .mr-auto {
     margin-right: auto;
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -253,6 +260,9 @@
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-\[8px\] {
+    margin-bottom: 8px;
   }
   .mb-\[27px\] {
     margin-bottom: 27px;
@@ -289,9 +299,6 @@
   }
   .aspect-\[1\.5\] {
     aspect-ratio: 1.5;
-  }
-  .aspect-square {
-    aspect-ratio: 1 / 1;
   }
   .h-4 {
     height: calc(var(--spacing) * 4);
@@ -440,6 +447,9 @@
   .w-\[89px\] {
     width: 89px;
   }
+  .w-\[91px\] {
+    width: 91px;
+  }
   .w-\[108px\] {
     width: 108px;
   }
@@ -494,9 +504,6 @@
   .w-full {
     width: 100%;
   }
-  .max-w-12 {
-    max-width: calc(var(--spacing) * 12);
-  }
   .max-w-\[89px\] {
     max-width: 89px;
   }
@@ -530,6 +537,12 @@
   .max-w-\[1024px\] {
     max-width: 1024px;
   }
+  .min-w-\[91px\] {
+    min-width: 91px;
+  }
+  .min-w-\[153px\] {
+    min-width: 153px;
+  }
   .min-w-\[300px\] {
     min-width: 300px;
   }
@@ -539,11 +552,20 @@
   .min-w-\[375px\] {
     min-width: 375px;
   }
+  .flex-1 {
+    flex: 1;
+  }
+  .flex-2 {
+    flex: 2;
+  }
   .flex-shrink {
     flex-shrink: 1;
   }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .basis-full {
+    flex-basis: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -566,6 +588,9 @@
   .snap-start {
     scroll-snap-align: start;
   }
+  .appearance-none {
+    appearance: none;
+  }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -574,6 +599,9 @@
   }
   .flex-row-reverse {
     flex-direction: row-reverse;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -596,11 +624,11 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-\[9px\] {
+    gap: 9px;
+  }
   .gap-\[79px\] {
     gap: 79px;
-  }
-  .overflow-auto {
-    overflow: auto;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -684,6 +712,9 @@
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
   }
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
+  }
   .text-center {
     text-align: center;
   }
@@ -744,11 +775,6 @@
   .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .\[scrollbar-width\:none\] {
     scrollbar-width: none;
@@ -908,16 +934,6 @@
   .md\:h-\[48px\] {
     @media (width >= 48rem) {
       height: 48px;
-    }
-  }
-  .md\:min-h-12 {
-    @media (width >= 48rem) {
-      min-height: calc(var(--spacing) * 12);
-    }
-  }
-  .md\:min-h-\[48px\] {
-    @media (width >= 48rem) {
-      min-height: 48px;
     }
   }
   .md\:w-\[110px\] {
