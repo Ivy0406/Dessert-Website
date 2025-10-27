@@ -216,6 +216,19 @@ input[type="checkbox"]{
 
         };
 
+        &.check{
+            &::before{
+                background-color: $color-secondary;
+                content: '✓';
+                display: flex;
+                color: $color-primary;
+                justify-content: center;
+                align-items: center;
+                font-weight: 600;
+            };
+
+        }
+
         &.last{
             justify-content: end
         }
@@ -238,5 +251,25 @@ select{
         &.selected{
             color:$color-text;
         }
+    }
+}
+
+.option-btn{
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-secondary;
+    font-weight: 600;
+    font-size: 20px;
+    border: 1px solid $color-secondary;
+    &:hover{
+        background-color: $color-secondary;
+        color: $color-primary;
+    }
+
+    &:active{
+        background-color: $color-secondary;
+        color: $color-primary;
     }
 }
