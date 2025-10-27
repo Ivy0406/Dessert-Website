@@ -1,33 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sweetaste訂單詳情-郵寄發票</title>
-    <link href="./src/output.css" rel="stylesheet">
-    <link href="./scss/main.css" rel="stylesheet">
-</head>
-<body>
-    <header class="flex justify-between w-full max-w-[1024px] h-10 px-[33px] md:px-[42px] mr-auto ml-auto mt-[30px] mb-[30px] items-center">
-        <button class="hover:cursor-pointer block md:hidden" >
-            <img src="./images/dehaze-24px.png" alt="漢堡選單">
-        </button>
-        <picture class="w-[200px] h-10 items-center">
-            <source media="(max-width:768px)" srcset="./images\logotype-lg-dark.svg">
-            <img class="h-10" src="./images/logo-all-dark.svg" alt="品牌Logo">
-        </picture>
-        <nav class="max-w-[300px] flex justify-between gap-[79px] items-center">
-            <ul class="w-[215px] hidden md:flex justify-between items-center">
-                <li class="text-[#3F5D45] font-semibold"><a href="index.html">首頁</a></li>
-                <li class="text-[#3F5D45] font-semibold"><a href="product.html">甜點</a></li>
-                <li class="text-[#3F5D45] font-semibold"><a href="login.html">登入</a></li>
-            </ul>
-            <div class="w-[24px] ">
-                <a href="cart.html"><img src="./images/shopping_cart.png" alt="前往購物車"></a>
-            </div>
-        </nav>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./scss/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header
+      class="flex justify-between w-full max-w-[1024px] h-10 px-[33px] md:px-[42px] mr-auto ml-auto mt-[30px] mb-[30px] items-center"
+    >
+      <button class="hover:cursor-pointer block md:hidden">
+        <img src="./images/dehaze-24px.png" alt="漢堡選單" />
+      </button>
+      <picture class="w-[200px] h-10 items-center">
+        <source
+          media="(max-width:768px)"
+          srcset="./images\logotype-lg-dark.svg"
+        />
+        <img class="h-10" src="./images/logo-all-dark.svg" alt="品牌Logo" />
+      </picture>
+      <nav class="max-w-[300px] flex justify-between gap-[79px] items-center">
+        <ul class="w-[215px] hidden md:flex justify-between items-center">
+          <li class="text-[#3F5D45] font-semibold">
+            <a href="index.html">首頁</a>
+          </li>
+          <li class="text-[#3F5D45] font-semibold">
+            <a href="product.html">甜點</a>
+          </li>
+          <li class="text-[#3F5D45] font-semibold">
+            <a href="login.html">登入</a>
+          </li>
+        </ul>
+        <div class="w-[24px]">
+          <a href="cart.html"
+            ><img src="./images/shopping_cart.png" alt="前往購物車"
+          /></a>
+        </div>
+      </nav>
     </header>
 
-<script src="./js/all.js"></script>
-</body>
+    <main
+      class="max-w-[1024px] mx-auto md:flex md:my-[65px] md:gap-5 md:justify-center md:items-start"
+    >
+      <div class="bg-[#3F5D45] md:w-[460px]">
+        <section class="flex justify-between items-center p-[30px]">
+          <h1 class="text-[#EAF0ED] text-4xl font-semibold flex-1">發票</h1>
+          <ol class="stepper flex-1">
+            <li class="stepper-item first check"></li>
+            <li class="stepper-item check"></li>
+            <li class="stepper-item last active"></li>
+          </ol>
+        </section>
+        <section class="h-[56px] flex justify-between items-center px-[30px]">
+          <a href="order_e-reciept.html" class="option-btn w-full h-full"
+            >電子發票
+          </a>
+          <a href="order_reciept.html" class="option-btn w-full h-full"
+            >郵寄發票
+          </a>
+        </section>
+
+        <!-- 郵寄發票內容 (用JS渲染) -->
+        <form class="px-[30px] mt-[30px] flex flex-col gap-4">
+          
+
+          <section class="flex gap-2 flex-wrap">
+            <div class="flex flex-2 basis-full justify-between gap-[9px]">
+                <label class="text-[20px] text-[#EAF0ED] font-semibold">地址</label>
+                <label class="flex items-center text-[#EAF0ED] font-semibold">
+                    <input class="w-4 h-4 mr-2" type="checkbox" />
+                    <span>同運送地址</span>
+                </label>
+            </div>
+            <div
+              class="bg-[#EAF0ED] flex flex-1 justify-end items-center min-w-[153px] h-[56px] pl-5"
+            >
+              <select class="bg-[#EAF0ED] key-in w-full h-full appearance-none">
+                <option value="基隆市">基隆市</option>
+                <option value="台北市">台北市</option>
+                <option value="新北市">新北市</option>
+                <option value="桃園市">桃園市</option>
+                <option value="新竹市">新竹市</option>
+                <option value="新竹縣">新竹縣</option>
+                <option value="苗栗縣">苗栗縣</option>
+                <option value="台中市">台中市</option>
+                <option value="彰化縣">彰化縣</option>
+                <option value="南投縣">南投縣</option>
+                <option value="雲林縣">雲林縣</option>
+                <option value="嘉義市">嘉義市</option>
+                <option value="嘉義縣">嘉義縣</option>
+                <option value="台南市">台南市</option>
+                <option value="高雄市" selected>高雄市</option>
+                <option value="屏東縣">屏東縣</option>
+                <option value="宜蘭縣">宜蘭縣</option>
+                <option value="花蓮縣">花蓮縣</option>
+                <option value="台東縣">台東縣</option>
+                <option value="澎湖縣">澎湖縣</option>
+                <option value="金門縣">金門縣</option>
+                <option value="連江縣">連江縣</option>
+              </select>
+
+              <figure>
+                <img
+                  src="./images/baseline-arrow-drop-up.png"
+                  alt="上一個選項"
+                />
+                <img
+                  src="./images/baseline-arrow-drop-down.png"
+                  alt="下一個選項"
+                />
+              </figure>
+            </div>
+
+            <div
+              class="bg-[#EAF0ED] flex flex-1 justify-end items-center min-w-[153px] h-[56px] pl-5 relative"
+            >
+              <input
+                class="bg-[#EAF0ED] key-in w-full h-full"
+                type="text"
+                placeholder="新興區"
+              />
+              <figure>
+                <img
+                  src="./images/baseline-arrow-drop-up.png"
+                  alt="上一個選項"
+                />
+                <img
+                  src="./images/baseline-arrow-drop-down.png"
+                  alt="下一個選項"
+                />
+              </figure>
+            </div>
+
+            <div
+              class="bg-[#EAF0ED] basis-full justify-end min-w-[153px] h-[56px] pl-5"
+            >
+              <input
+                class="bg-[#EAF0ED] key-in w-full h-full"
+                type="text"
+                placeholder="幸福路 520 號"
+              />
+            </div>
+          </section>
+
+          <section class="flex flex-col gap-2">
+            <label class="text-[20px] text-[#EAF0ED] font-semibold">統一編號（選填）</label>
+            <div
+              class="bg-[#EAF0ED] justify-end min-w-[153px] h-[56px] pl-5"
+            >
+              <input
+                class="bg-[#EAF0ED] key-in w-full h-full"
+                type="text"
+                placeholder="12345678"
+              />
+            </div>
+          </section>
+        </form>
+
+        <button class="accent-btn w-full mt-[30px]">
+          <a class="block w-full h-full py-4" href="order_success.html"
+            >確認結帳</a
+          >
+        </button>
+      </div>
+
+      <!-- 網頁版訂單摘要&購物清單 -->
+      <div class="flex flex-col justify-between gap-5">
+        <section
+          class="hidden flex-col items-center w-full min-w-[300px] border border-[#EAF0ED] md:flex"
+        >
+          <h2
+            class="flex justify-center items-center w-full h-[65px] bg-[#EAF0ED] text-2xl font-semibold text-[#8DA291]"
+          >
+            訂單摘要
+          </h2>
+          <dl class="grid grid-cols-2 gap-2 w-full text-[#8DA291] px-5 py-4">
+            <dt>小計</dt>
+            <dd class="text-right">NT$ 2,700</dd>
+
+            <dt>運費</dt>
+            <dd class="text-right">NT$ 300</dd>
+
+            <dt class="text-[20px] font-semibold mt-2">總計</dt>
+            <dd class="text-right text-[20px] font-semibold mt-2">NT$ 3,000</dd>
+          </dl>
+        </section>
+
+        <section
+          class="hidden flex-col items-center w-full min-w-[300px] border border-[#EAF0ED] md:flex"
+        >
+          <h2
+            class="flex justify-center items-center w-full h-[65px] bg-[#EAF0ED] text-2xl font-semibold text-[#8DA291]"
+          >
+            購物清單
+          </h2>
+          <ul class="flex flex-col gap-2 w-full text-[#8DA291] px-5 py-4">
+            <li class="flex gap-5 items-center">
+              <figure>
+                <img
+                  class="w-30 h-20 object-cover"
+                  src="https://bit.ly/2QvsT63"
+                  alt="焦糖馬卡龍"
+                />
+              </figure>
+              <figcaption>
+                <p>焦糖馬卡龍 (2)</p>
+                <p class="text-[20px] font-semibold">NT$ 900</p>
+              </figcaption>
+            </li>
+            <li class="flex gap-5 items-center">
+              <figure>
+                <img
+                  class="w-30 h-20 object-cover"
+                  src="https://bit.ly/2zBDAxX"
+                  alt="焦糖馬卡龍"
+                />
+              </figure>
+              <figcaption>
+                <p>焦糖馬卡龍 (2)</p>
+                <p class="text-[20px] font-semibold">NT$ 900</p>
+              </figcaption>
+            </li>
+            <li class="flex gap-5 items-center">
+              <figure>
+                <img
+                  class="w-30 h-20 object-cover"
+                  src="https://bit.ly/2zKOP7w"
+                  alt="焦糖馬卡龍"
+                />
+              </figure>
+              <figcaption>
+                <p>焦糖馬卡龍 (2)</p>
+                <p class="text-[20px] font-semibold">NT$ 900</p>
+              </figcaption>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="max-w-[1024px] mx-auto">
+      <section
+        class="flex items-center h-[116px] bg-[#3F5D45] max-[769px]:h-[186px]"
+      >
+        <div
+          class="flex justify-between items-center w-[780px] mx-auto max-[769px]:flex-col h-[122px]"
+        >
+          <div class="flex justify-between w-[276px]">
+            <img
+              class="w-[40px] h-[40px]"
+              src="./images/logo-light@2x.png"
+              alt="Sweetaste品牌Logo"
+            />
+            <p class="flex items-center justify-center text-[#EAF0ED] text-2xl">
+              訂閱你我的甜蜜郵件
+            </p>
+          </div>
+          <div
+            class="relative flex bg-[#EAF0ED] justify-end w-[380px] h-[56px] max-[769px]:w-[315px]"
+          >
+            <input class="key-in w-[200px] md:w-[272px]" type="text" />
+            <img
+              class="absolute top-4 left-5 w-[24px] h-[24px]"
+              src="./images/mail-24px.png"
+              alt="訂閱信箱輸入欄位"
+            />
+            <button
+              class="accent-btn w-[64px] flex justify-center items-center"
+              type="submit"
+            >
+              <img
+                src="./images/arrow_forward-24px.png"
+                alt="提交訂閱電子信箱"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-[341px] bg-[#EAF0ED] flex items-center">
+        <div
+          class="flex justify-between items-center w-full max-w-[780px] min-w-[315px] mx-auto max-[769px]:block max-[769px]:w-[315px]"
+        >
+          <div>
+            <img
+              class="w-[171px] h-[27px] mb-[116px] max-[769px]:mb-[40px]"
+              src="./images/logotype-lg-dark.svg"
+              alt="Sweetaste品牌Logo"
+            />
+            <div class="text-[#3F5D45] information-font mb-[30px]">
+              <p>07-1234-5678</p>
+              <p>sweetaste@email.com</p>
+              <p>800 高雄市新興區幸福路 520 號</p>
+            </div>
+            <div class="flex justify-between w-[72px] max-[769px]:mb-[30px]">
+              <a href="#"
+                ><img
+                  class="w-[32px] h-[32px]"
+                  src="./images/ic-line@.svg"
+                  alt="官方LINE連結"
+              /></a>
+              <a href="#"
+                ><img
+                  class="w-[32px] h-[32px]"
+                  src="./images/ic-facebook.svg"
+                  alt="臉書粉專連結"
+              /></a>
+            </div>
+          </div>
+          <div
+            class="w-[258px] h-[281px] flex flex-col justify-between items-end max-[769px]:h-full"
+          >
+            <img
+              class="w-[60px] h-[218px] max-[769px]:hidden"
+              src="./images/sm-今天是個吃甜點的好日子@2x.png"
+              alt="今天是個吃甜點的好日子。"
+            />
+            <p class="text-[#3F5D45]">© 2018 Sweetaste* All Rights Reserved</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./js/all.js"></script>
+  </body>
 </html>
