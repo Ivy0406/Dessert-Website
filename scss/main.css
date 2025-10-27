@@ -208,4 +208,14 @@ input[type=checkbox]:checked::after {
   border-width: 2px;
   border-color: #3F5D45;
   box-shadow: 0 0 0 1px #EAF0ED;
+}
+
+select {
+  color: #8DA291;
+}
+select option {
+  color: #8DA291;
+}
+select option.selected {
+  color: #8DA291;
 }/*# sourceMappingURL=main.css.map */

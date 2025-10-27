@@ -41,117 +41,208 @@
       </nav>
     </header>
 
-    <main class="bg-[#3F5D45] max-w-[1024px] mx-auto">
-      <section class="flex justify-between items-center p-[30px]">
-        <h1 class="text-[#EAF0ED] text-4xl font-semibold">運送</h1>
-        <ol class="stepper">
-          <li class="stepper-item active"></li>
-          <li class="stepper-item"></li>
-          <li class="stepper-item"></li>
-        </ol>
-      </section>
-      <form class="px-[30px]">
-        <section class="flex justify-between gap-[9px]">
-          <section class="flex-1">
-            <label class="text-[20px] text-[#EAF0ED] font-semibold">姓氏</label>
-            <div class="bg-[#EAF0ED] justify-end min-w-[153px] h-[56px] pl-5 mt-2">
-              <input
-                class="bg-[#EAF0ED] key-in w-full h-full"
-                type="text"
-                placeholder="王"
-              />
-            </div>
-          </section>
-          <section class="flex-1">
-            <label class="text-[20px] text-[#EAF0ED] font-semibold">名字</label>
-            <div class="bg-[#EAF0ED] justify-end min-w-[153px] h-[56px] pl-5 mt-2 mb-4">
-              <input
-                class="bg-[#EAF0ED] key-in w-full h-full"
-                type="text"
-                placeholder="小明"
-              />
-            </div>
-          </section>
+    <main
+      class="max-w-[1024px] mx-auto md:flex md:my-[65px] md:gap-5 md:justify-center"
+    >
+      <div class="bg-[#3F5D45] md:w-[460px]">
+        <section class="flex justify-between items-center p-[30px]">
+          <h1 class="text-[#EAF0ED] text-4xl font-semibold">運送</h1>
+          <ol class="stepper">
+            <li class="stepper-item active"></li>
+            <li class="stepper-item"></li>
+            <li class="stepper-item"></li>
+          </ol>
         </section>
-
-        <section>
-          <label class="text-[20px] text-[#EAF0ED] font-semibold">電話</label>
-          <div class="bg-[#EAF0ED] justify-end min-w-[153px] h-[56px] pl-5 mt-2 mb-4">
-            <input
-              class="bg-[#EAF0ED] key-in w-full h-full"
-              type="text"
-              placeholder="0912-345-678"
-            />
-          </div>
-        </section>
-
-        <section class="flex justify-between gap-[9px] items-end flex-wrap">
-          <section class="flex-1">
-            <label class="text-[20px] text-[#EAF0ED] font-semibold">地址</label>
-            <div class="bg-[#EAF0ED] flex justify-end items-center min-w-[153px] h-[56px] pl-5 mt-2 mb-4">
-              <select
-                class="bg-[#EAF0ED] key-in w-full h-full appearance-none"
+        <form class="px-[30px]">
+          <section class="flex justify-between gap-[9px]">
+            <section class="flex-1">
+              <label class="text-[20px] text-[#EAF0ED] font-semibold"
+                >姓氏</label
               >
-                <option value="基隆市">基隆市</option>
-                <option value="台北市">台北市</option>
-                <option value="新北市">新北市</option>
-                <option value="桃園市">桃園市</option>
-                <option value="新竹市">新竹市</option>
-                <option value="新竹縣">新竹縣</option>
-                <option value="苗栗縣">苗栗縣</option>
-                <option value="台中市">台中市</option>
-                <option value="彰化縣">彰化縣</option>
-                <option value="南投縣">南投縣</option>
-                <option value="雲林縣">雲林縣</option>
-                <option value="嘉義市">嘉義市</option>
-                <option value="嘉義縣">嘉義縣</option>
-                <option value="台南市">台南市</option>
-                <option value="高雄市">高雄市</option>
-                <option value="屏東縣">屏東縣</option>
-                <option value="宜蘭縣">宜蘭縣</option>
-                <option value="花蓮縣">花蓮縣</option>
-                <option value="台東縣">台東縣</option>
-                <option value="澎湖縣">澎湖縣</option>
-                <option value="金門縣">金門縣</option>
-                <option value="連江縣">連江縣</option>
-              </select>
-              <figure>
-                <img src="./images/baseline-arrow-drop-up.png" alt="上一個選項">
-                <img src="./images/baseline-arrow-drop-down.png" alt="下一個選項">
-              </figure>
-              
-            </div>
+              <div
+                class="bg-[#EAF0ED] justify-end min-w-[153px] h-[56px] pl-5 mt-2"
+              >
+                <input
+                  class="bg-[#EAF0ED] key-in w-full h-full"
+                  type="text"
+                  placeholder="王"
+                />
+              </div>
+            </section>
+            <section class="flex-1">
+              <label class="text-[20px] text-[#EAF0ED] font-semibold"
+                >名字</label
+              >
+              <div
+                class="bg-[#EAF0ED] justify-end min-w-[153px] h-[56px] pl-5 mt-2 mb-4"
+              >
+                <input
+                  class="bg-[#EAF0ED] key-in w-full h-full"
+                  type="text"
+                  placeholder="小明"
+                />
+              </div>
+            </section>
           </section>
 
-          <section class="flex-1">
-            <div class="bg-[#EAF0ED] flex justify-end items-center min-w-[153px] h-[56px] pl-5 mb-4 relative">
+          <section>
+            <label class="text-[20px] text-[#EAF0ED] font-semibold">電話</label>
+            <div
+              class="bg-[#EAF0ED] justify-end min-w-[153px] h-[56px] pl-5 mt-2 mb-4"
+            >
               <input
                 class="bg-[#EAF0ED] key-in w-full h-full"
                 type="text"
-                placeholder="新興區"
-              />
-              <figure>
-                <img src="./images/baseline-arrow-drop-up.png" alt="上一個選項">
-                <img src="./images/baseline-arrow-drop-down.png" alt="下一個選項">
-              </figure>
-              
-            </div>
-          </section>
-
-          <section class="flex-2 basis-full">
-            <div class="bg-[#EAF0ED] justify-end min-w-[153px] h-[56px] pl-5">
-              <input
-                class="bg-[#EAF0ED] key-in w-full h-full"
-                type="text"
-                placeholder="幸福路 520 號"
+                placeholder="0912-345-678"
               />
             </div>
           </section>
 
+          <section class="flex justify-between gap-[9px] items-end flex-wrap">
+            <section class="flex-1">
+              <label class="text-[20px] text-[#EAF0ED] font-semibold"
+                >地址</label
+              >
+              <div
+                class="bg-[#EAF0ED] flex justify-end items-center min-w-[153px] h-[56px] pl-5 mt-2 mb-4"
+              >
+                <select
+                  class="bg-[#EAF0ED] key-in w-full h-full appearance-none"
+                >
+                  <option value="基隆市">基隆市</option>
+                  <option value="台北市">台北市</option>
+                  <option value="新北市">新北市</option>
+                  <option value="桃園市">桃園市</option>
+                  <option value="新竹市">新竹市</option>
+                  <option value="新竹縣">新竹縣</option>
+                  <option value="苗栗縣">苗栗縣</option>
+                  <option value="台中市">台中市</option>
+                  <option value="彰化縣">彰化縣</option>
+                  <option value="南投縣">南投縣</option>
+                  <option value="雲林縣">雲林縣</option>
+                  <option value="嘉義市">嘉義市</option>
+                  <option value="嘉義縣">嘉義縣</option>
+                  <option value="台南市">台南市</option>
+                  <option value="高雄市" selected>高雄市</option>
+                  <option value="屏東縣">屏東縣</option>
+                  <option value="宜蘭縣">宜蘭縣</option>
+                  <option value="花蓮縣">花蓮縣</option>
+                  <option value="台東縣">台東縣</option>
+                  <option value="澎湖縣">澎湖縣</option>
+                  <option value="金門縣">金門縣</option>
+                  <option value="連江縣">連江縣</option>
+                </select>
+                <figure>
+                  <img
+                    src="./images/baseline-arrow-drop-up.png"
+                    alt="上一個選項"
+                  />
+                  <img
+                    src="./images/baseline-arrow-drop-down.png"
+                    alt="下一個選項"
+                  />
+                </figure>
+              </div>
+            </section>
+
+            <section class="flex-1">
+              <div
+                class="bg-[#EAF0ED] flex justify-end items-center min-w-[153px] h-[56px] pl-5 mb-4 relative"
+              >
+                <input
+                  class="bg-[#EAF0ED] key-in w-full h-full"
+                  type="text"
+                  placeholder="新興區"
+                />
+                <figure>
+                  <img
+                    src="./images/baseline-arrow-drop-up.png"
+                    alt="上一個選項"
+                  />
+                  <img
+                    src="./images/baseline-arrow-drop-down.png"
+                    alt="下一個選項"
+                  />
+                </figure>
+              </div>
+            </section>
+
+            <section class="flex-2 basis-full">
+              <div class="bg-[#EAF0ED] justify-end min-w-[153px] h-[56px] pl-5">
+                <input
+                  class="bg-[#EAF0ED] key-in w-full h-full"
+                  type="text"
+                  placeholder="幸福路 520 號"
+                />
+              </div>
+            </section>
+          </section>
+        </form>
+        <button class="accent-btn w-full py-4 mt-[30px]">下一步</button>
+      </div>
+
+      <div class="flex flex-col justify-between">
+        <!-- 網頁版訂單摘要 -->
+          <section
+          class="hidden flex-col items-center w-full min-w-[300px] border border-[#EAF0ED] md:flex"
+        >
+          <h2
+            class="flex justify-center items-center w-full h-[65px] bg-[#EAF0ED] text-2xl font-semibold text-[#8DA291]"
+          >
+            訂單摘要
+          </h2>
+          <dl class="grid grid-cols-2 gap-2 w-full text-[#8DA291] px-5 py-4">
+            <dt>小計</dt>
+            <dd class="text-right">NT$ 2,700</dd>
+
+            <dt>運費</dt>
+            <dd class="text-right">NT$ 300</dd>
+
+            <dt class="text-[20px] font-semibold mt-2">總計</dt>
+            <dd class="text-right text-[20px] font-semibold mt-2">NT$ 3,000</dd>
+          </dl>
         </section>
 
-        <button class="accent-btn w-full h-full py-4 mt-[30px]">下一步</button>
-      </form>
+
+        <section
+          class="hidden flex-col items-center w-full min-w-[300px] border border-[#EAF0ED] md:flex"
+        >
+          <h2
+            class="flex justify-center items-center w-full h-[65px] bg-[#EAF0ED] text-2xl font-semibold text-[#8DA291]"
+          >
+            購物清單
+          </h2>
+          <ul class="flex flex-col gap-2 w-full text-[#8DA291] px-5 py-4">
+            <li class="flex gap-5 items-center">
+              <figure>
+                <img class="w-30 h-20 object-cover" src="https://bit.ly/2QvsT63" alt="焦糖馬卡龍" />
+              </figure>
+              <figcaption>
+                <p>焦糖馬卡龍 (2)</p>
+                <p class="text-[20px] font-semibold">NT$ 900</p>
+              </figcaption>
+            </li>
+            <li class="flex gap-5 items-center">
+              <figure>
+                <img class="w-30 h-20 object-cover" src="https://bit.ly/2zBDAxX" alt="焦糖馬卡龍" />
+              </figure>
+              <figcaption>
+                <p>焦糖馬卡龍 (2)</p>
+                <p class="text-[20px] font-semibold">NT$ 900</p>
+              </figcaption>
+            </li>
+            <li class="flex gap-5 items-center">
+              <figure>
+                <img class="w-30 h-20 object-cover" src="https://bit.ly/2zKOP7w" alt="焦糖馬卡龍" />
+              </figure>
+              <figcaption>
+                <p>焦糖馬卡龍 (2)</p>
+                <p class="text-[20px] font-semibold">NT$ 900</p>
+              </figcaption>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="max-w-[1024px] mx-auto">

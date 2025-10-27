@@ -214,3 +214,13 @@ input[type="checkbox"]{
     };
 }
 
+
+select{
+    color:$color-text;
+    option{
+        color:$color-text;
+        &.selected{
+            color:$color-text;
+        }
+    }
+}
