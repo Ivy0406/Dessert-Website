@@ -381,6 +381,9 @@
   .h-\[496px\] {
     height: 496px;
   }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -399,6 +402,9 @@
   .min-h-12 {
     min-height: calc(var(--spacing) * 12);
   }
+  .min-h-\[56px\] {
+    min-height: 56px;
+  }
   .min-h-\[106px\] {
     min-height: 106px;
   }
@@ -407,6 +413,9 @@
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
@@ -458,6 +467,9 @@
   }
   .w-\[108px\] {
     width: 108px;
+  }
+  .w-\[153px\] {
+    width: 153px;
   }
   .w-\[171px\] {
     width: 171px;
@@ -717,6 +729,9 @@
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
+  }
+  .pr-\[22px\] {
+    padding-right: 22px;
   }
   .pb-\[8\.5px\] {
     padding-bottom: 8.5px;
