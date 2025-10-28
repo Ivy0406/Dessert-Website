@@ -11,9 +11,27 @@
     <header
       class="flex justify-between w-full max-w-[1024px] h-10 px-[33px] md:px-[42px] mr-auto ml-auto mt-[30px] mb-[30px] items-center"
     >
-      <button class="hover:cursor-pointer block md:hidden">
-        <img src="./images/dehaze-24px.png" alt="漢堡選單" />
-      </button>
+      <nav class="relative w-[50px] flex items-center md:hidden">
+        <button class="menu-btn">
+          <img
+            class="w-[24px] hover:cursor-pointer hover:scale-150"
+            src="./images/baseline-menu.svg"
+            alt="漢堡選單"
+          />
+        </button>
+        <ul class="menu-list hidden absolute z-2 top-6 w-full border bg-white  border-[#3F5D45] text-[#3F5D45] text-center">
+          <li>
+            <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="index.html">首頁</a>
+          </li>
+          <li class="">
+            <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="product.html">甜點</a>
+          </li>
+          <li class="">
+            <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="login.html">登入</a>
+          </li>
+        </ul>
+      </nav>
+
       <picture class="w-[200px] h-10 items-center">
         <source
           media="(max-width:768px)"
@@ -524,6 +542,8 @@
       </section>
     </footer>
 
+
     <script src="./js/all.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>

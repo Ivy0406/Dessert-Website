@@ -11,9 +11,27 @@
     <header
       class="flex justify-between w-full max-w-[1024px] h-10 px-[33px] md:px-[42px] mr-auto ml-auto mt-[30px] mb-[30px] items-center"
     >
-      <button class="hover:cursor-pointer block md:hidden">
-        <img src="./images/dehaze-24px.png" alt="漢堡選單" />
-      </button>
+      <nav class="relative w-[50px] flex items-center md:hidden">
+        <button class="menu-btn">
+          <img
+            class="w-[24px] hover:cursor-pointer hover:scale-150"
+            src="./images/baseline-menu.svg"
+            alt="漢堡選單"
+          />
+        </button>
+        <ul class="menu-list hidden absolute z-2 top-6 w-full border bg-white  border-[#3F5D45] text-[#3F5D45] text-center">
+          <li>
+            <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="index.html">首頁</a>
+          </li>
+          <li class="">
+            <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="product.html">甜點</a>
+          </li>
+          <li class="">
+            <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="login.html">登入</a>
+          </li>
+        </ul>
+      </nav>
+
       <picture class="w-[200px] h-10 items-center">
         <source
           media="(max-width:768px)"
@@ -23,19 +41,22 @@
       </picture>
       <nav class="max-w-[300px] flex justify-between gap-[79px] items-center">
         <ul class="w-[215px] hidden md:flex justify-between items-center">
-          <li class="text-[#3F5D45] font-semibold">
+          <li class="navbar-btn">
             <a href="index.html">首頁</a>
           </li>
-          <li class="text-[#3F5D45] font-semibold">
+          <li class="navbar-btn">
             <a href="product.html">甜點</a>
           </li>
-          <li class="text-[#3F5D45] font-semibold">
+          <li class="navbar-btn">
             <a href="login.html">登入</a>
           </li>
         </ul>
         <div class="w-[24px]">
           <a href="cart.html"
-            ><img src="./images/shopping_cart.png" alt="前往購物車"
+            ><img
+              class="hover:scale-150"
+              src="./images/shopping-cart.svg"
+              alt="前往購物車"
           /></a>
         </div>
       </nav>
@@ -43,7 +64,7 @@
 
     <main class="max-w-[1024px] min-w-[375px] w-full mx-auto mb-[60px]">
       <section
-        class="w-full max-w-[940px] h-[496px] mx-auto flex justify-center overflow-hidden relative"
+        class="w-full max-w-[940px] h-[496px] mx-auto flex justify-center overflow-hidden relative max-[769px]:h-[277px]"
       >
         <img
           class="w-full h-full object-cover"
@@ -51,13 +72,15 @@
           alt="主視覺"
         />
         <img
-          class="absolute top-10 right-10 w-[89px] h-[328px]"
-          src="./images/sm-今天是個吃甜點的好日子@2x.png"
+          class="absolute top-10 right-10 w-[89px] h-[328px] max-[769px]:h-[218px] max-[769px]:w-[59px] max-[769px]:top-[30px]"
+          src="./images/sm-今天是個吃甜點的好日子.svg"
           alt="今天是個吃甜點的好日子"
         />
       </section>
 
-      <section class="max-w-[940px] mx-auto flex justify-between mt-[60px] max-[769px]:flex-col max-[769px]:items-center">
+      <section
+        class="max-w-[940px] mx-auto flex justify-between mt-[60px] max-[769px]:flex-col max-[769px]:items-center max-[769px]:mt-0"
+      >
         <nav class="min-w-[300px] max-[769px]:w-full max-[769px]:mb-[30px]">
           <ul>
             <li class="nav-title"><span>甜點類別</span></li>
@@ -68,7 +91,7 @@
           </ul>
         </nav>
 
-        <section class="w-[620px] max-[769px]:w-[315px] ">
+        <section class="w-[620px] max-[769px]:w-[315px]">
           <ul class="grid grid-cols-2 gap-5 max-[769px]:grid-cols-1">
             <li>
               <figure class="relative">
@@ -208,28 +231,13 @@
               </button>
             </li>
             <li>
-              <button
-                class="page-btn"
-                value="1"
-              >
-                1
-              </button>
+              <button class="page-btn" value="1">1</button>
             </li>
             <li>
-              <button
-                class="page-btn"
-                value="2"
-              >
-                2
-              </button>
+              <button class="page-btn" value="2">2</button>
             </li>
             <li>
-              <button
-                class="page-btn"
-                value="3"
-              >
-                3
-              </button>
+              <button class="page-btn" value="3">3</button>
             </li>
             <li>
               <button
@@ -284,7 +292,9 @@
       </section>
 
       <section class="h-[341px] bg-[#EAF0ED] flex items-center">
-        <div class="flex justify-between items-center w-full max-w-[780px] min-w-[315px] mx-auto max-[769px]:block max-[769px]:w-[315px]">
+        <div
+          class="flex justify-between items-center w-full max-w-[780px] min-w-[315px] mx-auto max-[769px]:block max-[769px]:w-[315px]"
+        >
           <div>
             <img
               class="w-[171px] h-[27px] mb-[116px] max-[769px]:mb-[40px]"
@@ -311,7 +321,9 @@
               /></a>
             </div>
           </div>
-          <div class="w-[258px] h-[281px] flex flex-col justify-between items-end max-[769px]:h-full">
+          <div
+            class="w-[258px] h-[281px] flex flex-col justify-between items-end max-[769px]:h-full"
+          >
             <img
               class="w-[60px] h-[218px] max-[769px]:hidden"
               src="./images/sm-今天是個吃甜點的好日子@2x.png"
@@ -324,5 +336,6 @@
     </footer>
 
     <script src="./js/all.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>

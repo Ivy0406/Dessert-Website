@@ -11,9 +11,27 @@
     <header
       class="flex justify-between w-full max-w-[1024px] h-10 px-[33px] md:px-[42px] mr-auto ml-auto mt-[30px] mb-[30px] items-center"
     >
-      <button class="hover:cursor-pointer block md:hidden">
-        <img src="./images/dehaze-24px.png" alt="漢堡選單" />
-      </button>
+       <nav class="relative w-[50px] flex items-center md:hidden">
+        <button class="menu-btn">
+          <img
+            class="w-[24px] hover:cursor-pointer hover:scale-150"
+            src="./images/baseline-menu.svg"
+            alt="漢堡選單"
+          />
+        </button>
+        <ul class="menu-list hidden absolute z-2 top-6 w-full border bg-white  border-[#3F5D45] text-[#3F5D45] text-center">
+          <li>
+            <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="index.html">首頁</a>
+          </li>
+          <li class="">
+            <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="product.html">甜點</a>
+          </li>
+          <li class="">
+            <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="login.html">登入</a>
+          </li>
+        </ul>
+      </nav>
+
       <picture class="w-[200px] h-10 items-center">
         <source
           media="(max-width:768px)"
@@ -58,7 +76,7 @@
               />
               <div class="w-[51%] pl-4 flex flex-col justify-between md:flex-row md:p-0 md:w-[290px] md:items-center">
                 <div class="text-[#3F5D45] md:flex md:justify-center md:flex-col">
-                  <p class="text-[20px]">草莓優格碗</p>
+                  <p class="text-[20px]">焦糖馬卡龍</p>
                   <p>NT$ 450</p>
                 </div>
                 <ul class="flex w-full text-[#3F5D45] md:max-w-[144px] md:h-12">
@@ -92,12 +110,12 @@
             <div class="flex min-h-[106px] pb-[8.5px] md:justify-between md:w-[437px]">
               <img
                 class="w-[49%] aspect-[1.5] object-cover md:aspect-square md:w-[110px]"
-                src="https://bit.ly/2QvsT63"
+                src="https://bit.ly/2zBDAxX"
                 alt="草莓優格碗"
               />
               <div class="w-[51%] pl-4 flex flex-col justify-between md:flex-row md:p-0 md:w-[290px] md:items-center">
                 <div class="text-[#3F5D45] md:flex md:justify-center md:flex-col">
-                  <p class="text-[20px]">草莓優格碗</p>
+                  <p class="text-[20px]">焦糖馬卡龍</p>
                   <p>NT$ 450</p>
                 </div>
                 <ul class="flex w-full text-[#3F5D45] md:w-[144px] md:h-[48px]">
@@ -131,12 +149,12 @@
             <div class="flex min-h-[106px] pb-[8.5px] md:justify-between md:w-[437px]">
               <img
                 class="w-[49%] aspect-[1.5] object-cover md:aspect-square md:w-[110px]"
-                src="https://bit.ly/2QvsT63"
-                alt="草莓優格碗"
+                src="https://bit.ly/2zKOP7w"
+                alt="焦糖馬卡龍"
               />
               <div class="w-[51%] pl-4 flex flex-col justify-between md:flex-row md:p-0 md:w-[290px] md:items-center">
                 <div class="text-[#3F5D45] md:flex md:justify-center md:flex-col">
-                  <p class="text-[20px]">草莓優格碗</p>
+                  <p class="text-[20px]">焦糖馬卡龍</p>
                   <p>NT$ 450</p>
                 </div>
                 <ul class="flex w-full text-[#3F5D45] md:w-[144px] md:h-[48px]">
@@ -214,7 +232,7 @@
         </dl>
 
         <button class="accent-btn w-full h-[65px]">
-          <span>結帳</span>
+          <a class="block w-full h-full py-4" href="./order_shipping.html">結帳</a>
         </button>
       </section>
 
@@ -304,5 +322,6 @@
     </footer>
 
     <script src="./js/all.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>

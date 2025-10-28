@@ -81,6 +81,15 @@ body{
     }
 }
 
+.navbar-btn{
+    color:$color-primary;
+    font-weight: 600;
+    &:hover{
+        border-bottom: 4px solid $color-primary;
+    }
+}
+
+
 .key-in{
     background-color: $color-secondary;
     &:hover{

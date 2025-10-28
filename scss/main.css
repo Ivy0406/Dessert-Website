@@ -80,6 +80,14 @@ body {
   transition: all 0.3s ease;
 }
 
+.navbar-btn {
+  color: #3F5D45;
+  font-weight: 600;
+}
+.navbar-btn:hover {
+  border-bottom: 4px solid #3F5D45;
+}
+
 .key-in {
   background-color: #EAF0ED;
 }
