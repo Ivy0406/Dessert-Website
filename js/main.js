@@ -39,8 +39,8 @@ function ProductCard(CardToShow) {
                   <span>${CardToShow.series}</span>
                 </div>
                 <img
-                  class="absolute z-10 right-5 top-[19px] hover:scale-150 cursor-pointer"
-                  src="./images/favorite_border.png"
+                  class="absolute z-10 right-5 top-[19px] hover:scale-150 cursor-pointer w-5"
+                  src="./images/baseline-favorite-border-empty.svg"
                   alt="加入我的收藏"
                 />
                 <img

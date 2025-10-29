@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "PingFang TC", Semibold;
+  font-family: "PingFang TC", "Noto Sans TC", sans-serif;
 }
 
 .label {
@@ -17,6 +17,7 @@ body {
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   letter-spacing: 4px;
 }
 
@@ -332,4 +333,8 @@ select option.selected {
 .copyright {
   font-family: "Times New Roman", Times, serif;
   color: #3F5D45;
+}
+
+.menu-list {
+  width: 50px;
 }/*# sourceMappingURL=main.css.map */

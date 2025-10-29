@@ -19,6 +19,7 @@ body{
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     letter-spacing: 4px;
 }
 
@@ -366,4 +367,8 @@ select{
 .copyright{
     font-family: 'Times New Roman', Times, serif;
     color:$color-primary;
+}
+
+.menu-list{
+    width: 50px;
 }

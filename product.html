@@ -20,7 +20,7 @@
           />
         </button>
         <ul class="menu-list hidden absolute z-2 top-6 w-full border bg-white  border-[#3F5D45] text-[#3F5D45] text-center">
-          <li>
+          <li class="">
             <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="index.html">首頁</a>
           </li>
           <li class="">
@@ -32,13 +32,16 @@
         </ul>
       </nav>
 
-      <picture class="w-[200px] h-10 items-center">
-        <source
-          media="(max-width:768px)"
-          srcset="./images\logotype-lg-dark.svg"
-        />
-        <img class="h-10" src="./images/logo-all-dark.svg" alt="品牌Logo" />
-      </picture>
+      <a href="index.html">
+        <picture class="h-[17.74px] items-center justify-center md:h-10 ">
+          <source
+            media="(max-width:768px)"
+            srcset="./images/logotype-lg-dark.svg"
+          />
+          <img class="h-[17.74px] md:h-10" src="./images/logo-all-dark.svg" alt="品牌Logo" />
+        </picture>
+      </a>
+
       <nav class="max-w-[300px] flex justify-between gap-[79px] items-center">
         <ul class="w-[215px] hidden md:flex justify-between items-center">
           <li class="navbar-btn">
@@ -53,14 +56,12 @@
         </ul>
         <div class="w-[24px]">
           <a href="cart.html"
-            ><img
-              class="hover:scale-150"
-              src="./images/shopping-cart.svg"
-              alt="前往購物車"
+            ><img class="hover:scale-150" src="./images/shopping-cart.svg" alt="前往購物車"
           /></a>
         </div>
       </nav>
     </header>
+
 
     <main class="max-w-[1024px] min-w-[375px] w-full mx-auto mb-[60px]">
       <section
@@ -254,9 +255,9 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="w-full ">
       <section
-        class="flex items-center h-[116px] bg-[#3F5D45] max-[769px]:h-[186px]"
+        class="flex items-center bg-[#3F5D45] h-[116px] max-[769px]:h-[186px]"
       >
         <div
           class="flex justify-between items-center w-[780px] mx-auto max-[769px]:flex-col h-[122px]"
@@ -331,7 +332,7 @@
               src="./images/sm-今天是個吃甜點的好日子@2x.png"
               alt="今天是個吃甜點的好日子。"
             />
-            <p class="text-[#3F5D45]">© 2018 Sweetaste* All Rights Reserved</p>
+            <p class="copyright">© 2018 Sweetaste* All Rights Reserved</p>
           </div>
         </div>
       </section>
