@@ -221,6 +221,7 @@ input[type=checkbox]:checked::after {
   font-family: "Material Symbols Outlined";
   content: "\e5ca";
   font-size: 14px;
+  max-height: 16.45px;
   display: flex;
   color: #3F5D45;
   justify-content: center;
@@ -281,6 +282,9 @@ input[type=checkbox]:checked::after {
   background-color: #3F5D45;
   font-family: "Material Symbols Outlined";
   content: "\e5ca";
+  max-height: 20px;
+  max-width: 20px;
+  font-size: 14px;
   display: flex;
   color: #EAF0ED;
   justify-content: center;
