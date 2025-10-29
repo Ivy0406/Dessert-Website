@@ -6,7 +6,10 @@
     <title>Sweetaste購物車</title>
     <link href="./src/output.css" rel="stylesheet" />
     <link href="./scss/main.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
   </head>
   <body>
     <header
@@ -88,8 +91,13 @@
         >
           您的購物車
         </h1>
-        <ul class="w-full p-[30px] flex flex-col gap-[30.5px] md:px-0 md:gap-5">
-          <li class="w-full md:border-b md:border-[#EAF0ED] md:flex md:justify-between md:items-center md:pb-5">
+        <ul
+          class="cart-list w-full p-[30px] flex flex-col gap-[30.5px] md:px-0 md:gap-5"
+          
+        >
+          <li
+            class="cart-item w-full md:border-b md:border-[#EAF0ED] md:flex md:justify-between md:items-center md:pb-5"
+          >
             <div
               class="flex min-h-[106px] pb-[8.5px] md:justify-between md:w-[437px] md:pb-0"
             >
@@ -107,23 +115,25 @@
                   <p class="text-[20px]">焦糖馬卡龍</p>
                   <p>NT$ 450</p>
                 </div>
-                <ul class="flex w-full text-[#3F5D45] md:max-w-[144px] md:h-12">
-                  <li
-                    class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"
+                <div class="flex w-full text-[#3F5D45] md:w-[144px] md:h-[48px]">
+                  <button
+                      class="h-full cursor-pointer hover:bg-[#EAF0ED] active:bg-[#EAF0ED] w-[33.3%] min-h-12 flex justify-center items-center border border-[#EAF0ED]"
+                      value="prev"
+                    >
+                      -
+                    </button>
+                  <input
+                    class="item-quantity w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED] text-center appearance-none"
+                    value="2" 
                   >
-                    <span>-</span>
-                  </li>
-                  <li
-                    class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"
-                  >
-                    <span>2</span>
-                  </li>
-                  <li
-                    class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"
-                  >
-                    <span>+</span>
-                  </li>
-                </ul>
+                  </input>
+                  <button
+                      class="h-full cursor-pointer hover:bg-[#EAF0ED] active:bg-[#EAF0ED] w-[33.3%] min-h-12 flex justify-center items-center border border-[#EAF0ED] disabled:bg-white"
+                      value="next"
+                    >
+                      +
+                    </button>
+                </div>
               </div>
             </div>
             <div
@@ -138,7 +148,9 @@
             />
           </li>
 
-          <li class="w-full md:flex md:justify-between md:border-b md:border-[#EAF0ED] md:items-center">
+          <li
+            class="cart-item w-full md:flex md:justify-between md:border-b md:border-[#EAF0ED] md:items-center"
+            >
             <div
               class="flex min-h-[106px] md:justify-between md:w-[437px] pb-[8.5px] md:pb-5"
             >
@@ -156,23 +168,25 @@
                   <p class="text-[20px]">焦糖馬卡龍</p>
                   <p>NT$ 450</p>
                 </div>
-                <ul class="flex w-full text-[#3F5D45] md:w-[144px] md:h-[48px]">
-                  <li
-                    class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"
+                <div class="flex w-full text-[#3F5D45] md:w-[144px] md:h-[48px]">
+                  <button
+                      class="h-full cursor-pointer hover:bg-[#EAF0ED] active:bg-[#EAF0ED] w-[33.3%] min-h-12 flex justify-center items-center border border-[#EAF0ED]"
+                      value="prev"
+                    >
+                      -
+                    </button>
+                  <input
+                    class="item-quantity w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED] text-center appearance-none"
+                    value="2" 
                   >
-                    <span>-</span>
-                  </li>
-                  <li
-                    class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"
-                  >
-                    <span>2</span>
-                  </li>
-                  <li
-                    class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"
-                  >
-                    <span>+</span>
-                  </li>
-                </ul>
+                  </input>
+                  <button
+                      class="h-full cursor-pointer hover:bg-[#EAF0ED] active:bg-[#EAF0ED] w-[33.3%] min-h-12 flex justify-center items-center border border-[#EAF0ED] disabled:bg-white"
+                      value="next"
+                    >
+                      +
+                    </button>
+                </div>
               </div>
             </div>
             <div
@@ -187,7 +201,10 @@
             />
           </li>
 
-          <li class="w-full md:flex md:justify-between md:items-center md:pb-5">
+          <li
+            class="cart-item w-full md:flex md:justify-between md:items-center md:pb-5"
+            
+          >
             <div
               class="flex min-h-[106px] pb-[8.5px] md:justify-between md:w-[437px]"
             >
@@ -205,23 +222,25 @@
                   <p class="text-[20px]">焦糖馬卡龍</p>
                   <p>NT$ 450</p>
                 </div>
-                <ul class="flex w-full text-[#3F5D45] md:w-[144px] md:h-[48px]">
-                  <li
-                    class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"
+                <div class="flex w-full text-[#3F5D45] md:w-[144px] md:h-[48px]">
+                  <button
+                      class="h-full cursor-pointer hover:bg-[#EAF0ED] active:bg-[#EAF0ED] w-[33.3%] min-h-12 flex justify-center items-center border border-[#EAF0ED]"
+                      value="prev"
+                    >
+                      -
+                    </button>
+                  <input
+                    class="item-quantity w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED] text-center appearance-none"
+                    value="2" 
                   >
-                    <span>-</span>
-                  </li>
-                  <li
-                    class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"
-                  >
-                    <span>2</span>
-                  </li>
-                  <li
-                    class="w-[33.3%] h-full min-h-12 flex justify-center items-center border border-[#EAF0ED]"
-                  >
-                    <span>+</span>
-                  </li>
-                </ul>
+                  </input>
+                  <button
+                      class="h-full cursor-pointer hover:bg-[#EAF0ED] active:bg-[#EAF0ED] w-[33.3%] min-h-12 flex justify-center items-center border border-[#EAF0ED] disabled:bg-white"
+                      value="next"
+                    >
+                      +
+                    </button>
+                </div>
               </div>
             </div>
             <div
@@ -370,13 +389,13 @@
               src="./images/sm-今天是個吃甜點的好日子@2x.png"
               alt="今天是個吃甜點的好日子。"
             />
-            <p class="text-[#3F5D45]">© 2018 Sweetaste* All Rights Reserved</p>
+            <p class="copyright">© 2018 Sweetaste* All Rights Reserved</p>
           </div>
         </div>
       </section>
     </footer>
 
-    <script src="./js/all.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/cart.js"></script>
   </body>
 </html>

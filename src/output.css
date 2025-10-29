@@ -865,6 +865,13 @@
       }
     }
   }
+  .hover\:bg-\[\#EAF0ED\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #EAF0ED;
+      }
+    }
+  }
   .hover\:bg-\[\#FFE180\] {
     &:hover {
       @media (hover: hover) {
@@ -900,6 +907,11 @@
       --tw-scale-y: 150%;
       --tw-scale-z: 150%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .active\:bg-\[\#EAF0ED\] {
+    &:active {
+      background-color: #EAF0ED;
     }
   }
   .active\:bg-\[\#FFE180\] {
