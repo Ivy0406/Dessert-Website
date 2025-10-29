@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 
-* {
-  outline: 1px dashed chocolate;
-}
-
 body {
   font-family: "PingFang TC", Semibold;
 }
@@ -223,6 +219,7 @@ input[type=checkbox]:checked::after {
   background-color: #EAF0ED;
   font-family: "Material Symbols Outlined";
   content: "\e5ca";
+  font-size: 14px;
   display: flex;
   color: #3F5D45;
   justify-content: center;
@@ -325,5 +322,14 @@ select option.selected {
 }
 .option-btn:active {
   background-color: #EAF0ED;
+  color: #3F5D45;
+}
+.option-btn.selected {
+  background-color: #EAF0ED;
+  color: #3F5D45;
+}
+
+.copyright {
+  font-family: "Times New Roman", Times, serif;
   color: #3F5D45;
 }/*# sourceMappingURL=main.css.map */

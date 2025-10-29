@@ -76,7 +76,7 @@
           <a href="order_e-reciept.html" class="option-btn w-full h-full"
             >電子發票
           </a>
-          <a href="order_reciept.html" class="option-btn w-full h-full"
+          <a href="order_reciept.html" class="option-btn selected w-full h-full"
             >郵寄發票
           </a>
         </section>
@@ -96,7 +96,7 @@
             <div
               class="bg-[#EAF0ED] flex flex-1 justify-end items-center min-w-[153px] h-[56px] pl-5"
             >
-              <select class="bg-[#EAF0ED] key-in w-full h-full appearance-none">
+              <select class="bg-[#EAF0ED] key-in w-full h-full appearance-none" id="city-selection">
                 <option value="基隆市">基隆市</option>
                 <option value="台北市">台北市</option>
                 <option value="新北市">新北市</option>
@@ -136,11 +136,11 @@
             <div
               class="bg-[#EAF0ED] flex flex-1 justify-end items-center min-w-[153px] h-[56px] pl-5 relative"
             >
-              <input
-                class="bg-[#EAF0ED] key-in w-full h-full"
-                type="text"
-                placeholder="新興區"
-              />
+              <select
+                class="bg-[#EAF0ED] key-in w-full h-full appearance-none"
+                id="district-selection">
+                <!-- 用JS渲染鄉鎮區選項 -->
+              </select>
               <figure>
                 <img class="-mb-3"
                   src="./images/baseline-arrow-drop-up.png"
@@ -343,7 +343,7 @@
       </section>
     </footer>
 
-    <script src="./js/all.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/form.js" type="module"></script>
   </body>
 </html>

@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-*{outline: 1px dashed chocolate;}
-
 body{
     font-family: $font-family-primary;
 };
@@ -230,6 +228,7 @@ input[type="checkbox"]{
                 background-color: $color-secondary;
                 font-family: 'Material Symbols Outlined';
                 content: '\e5ca';
+                font-size: 14px;
                 display: flex;
                 color: $color-primary;
                 justify-content: center;
@@ -358,4 +357,13 @@ select{
         background-color: $color-secondary;
         color: $color-primary;
     }
+    &.selected{
+        background-color: $color-secondary;
+        color: $color-primary;
+    }
+}
+
+.copyright{
+    font-family: 'Times New Roman', Times, serif;
+    color:$color-primary;
 }
