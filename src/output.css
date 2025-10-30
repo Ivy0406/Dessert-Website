@@ -870,6 +870,21 @@
       }
     }
   }
+  .hover\:transition-normal {
+    &:hover {
+      @media (hover: hover) {
+        transition-behavior: normal;
+      }
+    }
+  }
+  .hover\:duration-700 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-duration: 700ms;
+        transition-duration: 700ms;
+      }
+    }
+  }
   .active\:bg-\[\#EAF0ED\] {
     &:active {
       background-color: #EAF0ED;
@@ -878,6 +893,11 @@
   .active\:bg-\[\#FFE180\] {
     &:active {
       background-color: #FFE180;
+    }
+  }
+  .active\:bg-\[\#FFE180\]\/80 {
+    &:active {
+      background-color: color-mix(in oklab, #FFE180 80%, transparent);
     }
   }
   .active\:bg-\[\#fac517\] {
@@ -1198,6 +1218,22 @@
       padding-bottom: calc(var(--spacing) * 5);
     }
   }
+  .\[\&\.active\]\:bg-\[\#FFE180\]\/80 {
+    &.active {
+      background-color: color-mix(in oklab, #FFE180 80%, transparent);
+    }
+  }
+  .\[\&\.active\]\:font-semibold {
+    &.active {
+      --tw-font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-semibold);
+    }
+  }
+  .\[\&\.active\]\:text-\[\#3F5D45\] {
+    &.active {
+      color: #3F5D45;
+    }
+  }
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -1297,6 +1333,10 @@
   inherits: false;
   initial-value: 1;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1323,6 +1363,7 @@
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
+      --tw-duration: initial;
     }
   }
 }
