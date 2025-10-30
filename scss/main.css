@@ -62,18 +62,17 @@ body {
 
 .accent-btn {
   background-color: #FFE180;
-  color: #3F5D45;
   cursor: pointer;
   color: #3F5D45;
   font-weight: 600;
   font-size: 24px;
 }
 .accent-btn:hover {
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.8);
+  background-color: rgb(255, 200.905511811, 26);
   transition: all 0.3s ease;
 }
 .accent-btn:active {
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.8);
+  background-color: rgb(230, 175.6692913386, 0);
   transition: all 0.3s ease;
 }
 
@@ -93,7 +92,8 @@ body {
 }
 
 .information-font {
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
 }
 
 .nav-title {

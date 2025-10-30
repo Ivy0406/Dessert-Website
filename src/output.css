@@ -8,7 +8,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-300: oklch(87.9% 0.169 91.605);
-    --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -179,14 +178,8 @@
   .relative {
     position: relative;
   }
-  .top-0 {
-    top: calc(var(--spacing) * 0);
-  }
   .top-4 {
     top: calc(var(--spacing) * 4);
-  }
-  .top-6 {
-    top: calc(var(--spacing) * 6);
   }
   .top-10 {
     top: calc(var(--spacing) * 10);
@@ -203,12 +196,6 @@
   .right-10 {
     right: calc(var(--spacing) * 10);
   }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
-  }
-  .left-0 {
-    left: calc(var(--spacing) * 0);
-  }
   .left-5 {
     left: calc(var(--spacing) * 5);
   }
@@ -217,9 +204,6 @@
   }
   .z-1 {
     z-index: 1;
-  }
-  .z-2 {
-    z-index: 2;
   }
   .z-10 {
     z-index: 10;
@@ -266,9 +250,6 @@
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
-  .mr-auto {
-    margin-right: auto;
-  }
   .-mb-3 {
     margin-bottom: calc(var(--spacing) * -3);
   }
@@ -299,9 +280,6 @@
   .mb-\[116px\] {
     margin-bottom: 116px;
   }
-  .ml-auto {
-    margin-left: auto;
-  }
   .block {
     display: block;
   }
@@ -325,9 +303,6 @@
   }
   .h-6 {
     height: calc(var(--spacing) * 6);
-  }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
   }
   .h-20 {
     height: calc(var(--spacing) * 20);
@@ -410,9 +385,6 @@
   .h-full {
     height: 100%;
   }
-  .h-screen {
-    height: 100vh;
-  }
   .max-h-\[250px\] {
     max-height: 250px;
   }
@@ -467,9 +439,6 @@
   .w-\[49\%\] {
     width: 49%;
   }
-  .w-\[50px\] {
-    width: 50px;
-  }
   .w-\[51\%\] {
     width: 51%;
   }
@@ -487,9 +456,6 @@
   }
   .w-\[89px\] {
     width: 89px;
-  }
-  .w-\[100px\] {
-    width: 100px;
   }
   .w-\[108px\] {
     width: 108px;
@@ -547,9 +513,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .w-screen {
-    width: 100vw;
   }
   .max-w-\[89px\] {
     max-width: 89px;
@@ -665,9 +628,6 @@
   .justify-end {
     justify-content: flex-end;
   }
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
-  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -714,13 +674,6 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
-  .border-b-2 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 2px;
-  }
-  .border-\[\#3F5D45\] {
-    border-color: #3F5D45;
-  }
   .border-\[\#EAF0ED\] {
     border-color: #EAF0ED;
   }
@@ -736,12 +689,6 @@
   .bg-\[\#FFFFFF\] {
     background-color: #FFFFFF;
   }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
-  }
-  .bg-white {
-    background-color: var(--color-white);
-  }
   .bg-cover {
     background-size: cover;
   }
@@ -756,6 +703,9 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .px-\[18px\] {
     padding-inline: 18px;
@@ -810,10 +760,6 @@
   .text-\[20px\] {
     font-size: 20px;
   }
-  .leading-2 {
-    --tw-leading: calc(var(--spacing) * 2);
-    line-height: calc(var(--spacing) * 2);
-  }
   .leading-8 {
     --tw-leading: calc(var(--spacing) * 8);
     line-height: calc(var(--spacing) * 8);
@@ -821,10 +767,6 @@
   .leading-10 {
     --tw-leading: calc(var(--spacing) * 10);
     line-height: calc(var(--spacing) * 10);
-  }
-  .leading-20 {
-    --tw-leading: calc(var(--spacing) * 20);
-    line-height: calc(var(--spacing) * 20);
   }
   .font-light {
     --tw-font-weight: var(--font-weight-light);
@@ -928,14 +870,6 @@
       }
     }
   }
-  .active\:scale-150 {
-    &:active {
-      --tw-scale-x: 150%;
-      --tw-scale-y: 150%;
-      --tw-scale-z: 150%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
   .active\:bg-\[\#EAF0ED\] {
     &:active {
       background-color: #EAF0ED;
@@ -944,11 +878,6 @@
   .active\:bg-\[\#FFE180\] {
     &:active {
       background-color: #FFE180;
-    }
-  }
-  .active\:bg-\[\#e4bd3d\] {
-    &:active {
-      background-color: #e4bd3d;
     }
   }
   .active\:bg-\[\#fac517\] {
@@ -1137,9 +1066,24 @@
       width: 144px;
     }
   }
+  .md\:w-\[265px\] {
+    @media (width >= 48rem) {
+      width: 265px;
+    }
+  }
+  .md\:w-\[270px\] {
+    @media (width >= 48rem) {
+      width: 270px;
+    }
+  }
   .md\:w-\[272px\] {
     @media (width >= 48rem) {
       width: 272px;
+    }
+  }
+  .md\:w-\[279px\] {
+    @media (width >= 48rem) {
+      width: 279px;
     }
   }
   .md\:w-\[290px\] {

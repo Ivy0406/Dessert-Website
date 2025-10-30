@@ -65,17 +65,16 @@ body{
 
 .accent-btn{
     background-color: $color-accent;
-    color: $color-primary;
     cursor: pointer;
     color: $color-primary;
     font-weight: 600;
     font-size: 24px;
     &:hover{
-        box-shadow: 0 5px 18px rgba($color: black, $alpha: 0.8);
+        background-color: darken($color-accent,20%);
         transition: all 0.3s ease;
     }
     &:active{
-        box-shadow: 0 5px 18px rgba($color: black, $alpha: 0.8);
+        background-color: darken($color-accent,30%);
         transition: all 0.3s ease;
     }
 }
@@ -98,6 +97,7 @@ body{
 
 .information-font{
     font-family: $font-family-secondary;
+    font-weight: 400;
 }
 
 .nav-title{

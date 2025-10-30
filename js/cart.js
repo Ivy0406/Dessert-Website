@@ -14,6 +14,8 @@ CartList.addEventListener("click",function(event){
     let BtnPlus = CartItem.querySelector('button[value="next"]');
     let BtnMinus = CartItem.querySelector('button[value="prev"]');
     let CurrentQuantity = parseInt(ProductInput.value);
+    BtnPlus.disabled = false;
+    BtnMinus.disabled = false;
     
     if(ClickTarget.value === "prev"){
         CurrentQuantity = CurrentQuantity-1;
@@ -27,12 +29,12 @@ CartList.addEventListener("click",function(event){
     if(CurrentQuantity < MinQuantity){
         CurrentQuantity = MinQuantity;
         BtnMinus.disabled = true;
-        BtnPlus.disabled =false;
+        BtnPlus.disabled = false;
     }
     if(CurrentQuantity > MaxQuantity){
         CurrentQuantity = MaxQuantity;
         BtnPlus.disabled = true;
-        BtnMinus.disabled =false;
+        BtnMinus.disabled = false;
     }
 
     ProductInput.value = CurrentQuantity;
