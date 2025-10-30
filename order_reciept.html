@@ -10,58 +10,84 @@
   </head>
   <body>
     <header
-      class="flex justify-between w-full max-w-[1024px] h-10 px-[33px] md:px-[42px] mr-auto ml-auto mt-[30px] mb-[30px] items-center"
+      class="flex flex-col items-center gap-2 w-full max-w-screen py-[33px] px-[33px] md:px-[42px] mx-0"
     >
-       <nav class="relative w-[50px] flex items-center md:hidden">
-        <button class="menu-btn">
+      <div class="flex justify-between w-full max-w-[940px]">
+        <button class="menu-btn md:hidden">
           <img
             class="w-[24px] hover:cursor-pointer hover:scale-150"
             src="./images/baseline-menu.svg"
             alt="漢堡選單"
           />
         </button>
-        <ul class="menu-list hidden absolute z-2 top-6 w-full border bg-white  border-[#3F5D45] text-[#3F5D45] text-center">
+
+        <a href="index.html">
+          <picture class="h-[17.74px] items-center justify-center md:h-10">
+            <source
+              media="(max-width:768px)"
+              srcset="./images/logotype-lg-dark.svg"
+            />
+            <img
+              class="h-[17.74px] md:h-10"
+              src="./images/logo-all-dark.svg"
+              alt="品牌Logo"
+            />
+          </picture>
+        </a>
+
+        <nav class="max-w-[300px] flex justify-between gap-[79px] items-center">
+          <ul class="w-[215px] hidden md:flex justify-between items-center">
+            <li class="navbar-btn">
+              <a href="index.html">首頁</a>
+            </li>
+            <li class="navbar-btn">
+              <a href="product.html">甜點</a>
+            </li>
+            <li class="navbar-btn">
+              <a href="login.html">登入</a>
+            </li>
+          </ul>
+          <div class="w-[24px]">
+            <a href="cart.html"
+              ><img
+                class="hover:scale-150"
+                src="./images/shopping-cart.svg"
+                alt="前往購物車"
+            /></a>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="w-full max-w-[940px] md:hidden">
+        <ul
+          class="hidden text-[#3F5D45] text-center leading-10 font-semibold"
+          id="menu-list"
+        >
           <li>
-            <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="index.html">首頁</a>
+            <a
+              class="block w-full hover:bg-[#FFE180] active:bg-[#fac517]"
+              href="index.html"
+              >首頁</a
+            >
           </li>
           <li class="">
-            <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="product.html">甜點</a>
+            <a
+              class="block w-full hover:bg-[#FFE180] active:bg-[#fac517]"
+              href="product.html"
+              >甜點</a
+            >
           </li>
           <li class="">
-            <a class="block w-full hover:bg-[#FFE180] active:[#FFE180]" href="login.html">登入</a>
+            <a
+              class="block w-full hover:bg-[#FFE180] active:bg-[#fac517]"
+              href="login.html"
+              >登入</a
+            >
           </li>
         </ul>
-      </nav>
-      
-      <a href="index.html">
-        <picture class="h-[17.74px] items-center justify-center md:h-10 ">
-          <source
-            media="(max-width:768px)"
-            srcset="./images/logotype-lg-dark.svg"
-          />
-          <img class="h-[17.74px] md:h-10" src="./images/logo-all-dark.svg" alt="品牌Logo" />
-        </picture>
-      </a>
-      
-      <nav class="max-w-[300px] flex justify-between gap-[79px] items-center">
-        <ul class="w-[215px] hidden md:flex justify-between items-center">
-          <li class="text-[#3F5D45] font-semibold">
-            <a href="index.html">首頁</a>
-          </li>
-          <li class="text-[#3F5D45] font-semibold">
-            <a href="product.html">甜點</a>
-          </li>
-          <li class="text-[#3F5D45] font-semibold">
-            <a href="login.html">登入</a>
-          </li>
-        </ul>
-        <div class="w-[24px]">
-          <a href="cart.html"
-            ><img src="./images/shopping_cart.png" alt="前往購物車"
-          /></a>
-        </div>
-      </nav>
+      </div>
     </header>
+
 
     <main
       class="max-w-[1024px] mx-auto md:flex md:my-[65px] md:gap-5 md:justify-center md:items-start"

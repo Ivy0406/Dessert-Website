@@ -1,6 +1,6 @@
 // 宣告變數
 const menuBtn = document.querySelector('.menu-btn');
-const menuList = document.querySelector('.menu-list');
+const menuList = document.getElementById('menu-list');
 
 
 // 事件監聽區
