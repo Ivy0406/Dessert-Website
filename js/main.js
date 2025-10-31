@@ -112,8 +112,14 @@ window.addEventListener("resize", function () {
 // 判讀選擇類別
 
 SeriesSelect.addEventListener("click", function (event) {
-  let SeriesValue = event.target.closest("button")?.value;
+  let TargetBtn = event.target;
+  let SeriesBtns = SeriesSelect.querySelectorAll('button');
+  SeriesBtns.forEach(btn=>{
+    btn.classList.remove('active')
+  });
 
+  let SeriesValue = TargetBtn.value;
+  TargetBtn.classList.add('active');
   if (!SeriesValue) {
     return;
   }

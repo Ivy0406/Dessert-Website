@@ -130,7 +130,7 @@ body {
   background-color: #EAF0ED;
   transition: all 0.5s ease;
 }
-.nav-btn:active {
+.nav-btn.active {
   background-color: #EAF0ED;
   transition: all 0.5s ease;
 }
