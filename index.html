@@ -14,7 +14,7 @@
       <div class="flex justify-between w-full max-w-[940px]">
         <button class="menu-btn md:hidden">
           <img
-            class="w-[24px] hover:cursor-pointer hover:scale-150"
+            class="w-[24px] hover:cursor-pointer hover:scale-150 active:scale-150"
             src="./images/baseline-menu.svg"
             alt="漢堡選單"
           />
@@ -49,7 +49,7 @@
           <div class="w-[24px]">
             <a href="cart.html"
               ><img
-                class="hover:scale-150"
+                class="hover:scale-150 active:scale-150"
                 src="./images/shopping-cart.svg"
                 alt="前往購物車"
             /></a>
@@ -272,72 +272,7 @@
         <ul
           class="product-list-mobile flex mt-[30px] w-[315px] mx-auto overflow-x-auto overflow-y-hidden gap-4 snap-x snap-mandatory scroll-smooth [scrollbar-width:none] md:hidden"
         >
-          <li class="w-[315px] shrink-0 snap-start">
-            <figure class="relative">
-              <div class="label absolute z-10 left-5">
-                <span>本日精選</span>
-              </div>
-              <img
-                class="absolute z-10 right-5 top-[19px] hover:scale-150 cursor-pointer w-5"
-                src="./images/baseline-favorite-border-empty.svg"
-                alt="加入我的收藏"
-              />
-              <img
-                class="h-[315px] w-full object-cover"
-                src="https://bit.ly/2zBjQuq"
-              />
-            </figure>
-            <figcaption class="flex">
-              <p class="product-name">焦糖馬卡龍</p>
-              <p class="product-price">NT$450</p>
-            </figcaption>
-            <button class="lg-btn w-full">加入購物車</button>
-          </li>
-
-          <li class="w-[315px] shrink-0 snap-start">
-            <figure class="relative">
-              <div class="label absolute z-10 left-5">
-                <span>本日精選</span>
-              </div>
-              <img
-                class="absolute z-10 right-5 top-[19px] hover:scale-150 cursor-pointer w-5"
-                src="./images/baseline-favorite-border-empty.svg"
-                alt="加入我的收藏"
-              />
-              <img
-                class="h-[315px] w-full object-cover"
-                src="https://bit.ly/2zBjQuq"
-              />
-            </figure>
-            <figcaption class="flex">
-              <p class="product-name">焦糖馬卡龍</p>
-              <p class="product-price">NT$450</p>
-            </figcaption>
-            <button class="lg-btn w-full">加入購物車</button>
-          </li>
-
-          <li class="w-[315px] shrink-0 snap-start">
-            <figure class="relative">
-              <div class="label absolute z-10 left-5">
-                <span>本日精選</span>
-              </div>
-              <img
-                class="absolute z-10 right-5 top-[19px] hover:scale-150 cursor-pointer w-5"
-                src="./images/baseline-favorite-border-empty.svg"
-                alt="加入我的收藏"
-              />
-              <img
-                class="h-[315px] w-full object-cover"
-                src="https://bit.ly/2zBjQuq"
-              />
-            </figure>
-            <figcaption class="flex">
-              <p class="product-name">焦糖馬卡龍</p>
-              <p class="product-price">NT$450</p>
-            </figcaption>
-            <button class="lg-btn w-full">加入購物車</button>
-          </li>
-
+          <!-- 依照所選類別用JS渲染商品表  -->
         </ul>
       </section>
     </main>

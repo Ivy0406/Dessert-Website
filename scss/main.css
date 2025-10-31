@@ -82,6 +82,13 @@ body {
 }
 .navbar-btn:hover {
   border-bottom: 4px solid #3F5D45;
+  transition: 0.5s;
+  transform: scale(1.5);
+}
+.navbar-btn:active {
+  border-bottom: 4px solid #3F5D45;
+  transition: 0.5s;
+  transform: scale(1.5);
 }
 
 .key-in {

@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -292,9 +291,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .aspect-\[1\.5\] {
     aspect-ratio: 1.5;
   }
@@ -421,9 +417,6 @@
   .w-\[24px\] {
     width: 24px;
   }
-  .w-\[32\%\] {
-    width: 32%;
-  }
   .w-\[32px\] {
     width: 32px;
   }
@@ -469,9 +462,6 @@
   .w-\[196px\] {
     width: 196px;
   }
-  .w-\[200px\] {
-    width: 200px;
-  }
   .w-\[215px\] {
     width: 215px;
   }
@@ -483,9 +473,6 @@
   }
   .w-\[258px\] {
     width: 258px;
-  }
-  .w-\[272px\] {
-    width: 272px;
   }
   .w-\[276px\] {
     width: 276px;
@@ -507,9 +494,6 @@
   }
   .w-\[620px\] {
     width: 620px;
-  }
-  .w-\[780px\] {
-    width: 780px;
   }
   .w-full {
     width: 100%;
@@ -568,17 +552,11 @@
   .flex-2 {
     flex: 2;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
   }
   .basis-full {
     flex-basis: 100%;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -792,9 +770,6 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -804,9 +779,10 @@
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
-  .backdrop-filter {
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .\[scrollbar-width\:none\] {
     scrollbar-width: none;
@@ -870,19 +846,20 @@
       }
     }
   }
-  .hover\:transition-normal {
-    &:hover {
-      @media (hover: hover) {
-        transition-behavior: normal;
-      }
-    }
-  }
   .hover\:duration-700 {
     &:hover {
       @media (hover: hover) {
         --tw-duration: 700ms;
         transition-duration: 700ms;
       }
+    }
+  }
+  .active\:scale-150 {
+    &:active {
+      --tw-scale-x: 150%;
+      --tw-scale-y: 150%;
+      --tw-scale-z: 150%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
     }
   }
   .active\:bg-\[\#EAF0ED\] {
@@ -895,25 +872,9 @@
       background-color: #FFE180;
     }
   }
-  .active\:bg-\[\#FFE180\]\/80 {
-    &:active {
-      background-color: color-mix(in oklab, #FFE180 80%, transparent);
-    }
-  }
   .active\:bg-\[\#fac517\] {
     &:active {
       background-color: #fac517;
-    }
-  }
-  .active\:font-semibold {
-    &:active {
-      --tw-font-weight: var(--font-weight-semibold);
-      font-weight: var(--font-weight-semibold);
-    }
-  }
-  .active\:text-\[\#3F5D45\] {
-    &:active {
-      color: #3F5D45;
     }
   }
   .disabled\:bg-white {
@@ -1089,21 +1050,6 @@
   .md\:w-\[265px\] {
     @media (width >= 48rem) {
       width: 265px;
-    }
-  }
-  .md\:w-\[270px\] {
-    @media (width >= 48rem) {
-      width: 270px;
-    }
-  }
-  .md\:w-\[272px\] {
-    @media (width >= 48rem) {
-      width: 272px;
-    }
-  }
-  .md\:w-\[279px\] {
-    @media (width >= 48rem) {
-      width: 279px;
     }
   }
   .md\:w-\[290px\] {

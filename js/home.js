@@ -47,7 +47,7 @@ function RandomSelection(FiltedData) {
   while (SelectedItem.length < ItemsPerPage) {
     let RandomItem = Math.floor(Math.random() * ArrayLength);
     if (!SelectedItem.includes(RandomItem)) {
-      SelectedItem.push(RandomItem); //檢查若沒重複抽號就放進去索引值陣列
+      SelectedItem.push(RandomItem); //檢查若沒重複抽號(條件式結果為false)就放進去索引值陣列
     }
   }
 
