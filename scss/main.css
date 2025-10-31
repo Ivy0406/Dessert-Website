@@ -150,7 +150,7 @@ body {
   background-color: #3F5D45;
   color: #EAF0ED;
 }
-.page-btn:active {
+.page-btn.active {
   background-color: #3F5D45;
   color: #EAF0ED;
 }

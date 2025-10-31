@@ -7,6 +7,7 @@ let SeriesSelected = AllProductsData;
 const PageSelect = document.getElementById("page-select");
 const SeriesSelect = document.getElementById("series-select");
 const ProductList = document.getElementById("product-list");
+let PageBtns = PageSelect.querySelectorAll('button'); 
 let ItemsPerPage = 6;
 let CurrentPage = 1;
 
@@ -25,8 +26,19 @@ function renderProductsList(DataToShow) {
   let CardsHTML = ""; //每次渲染都要先清空原顯示的商品項目，否則會一直疊加
   DataToShow.forEach(function (item) {
     CardsHTML = CardsHTML + ProductCard(item); //持續累加到最後一筆
-    // console.log(item);
   });
+
+  PageBtns.forEach(pgbtn => {
+    pgbtn.classList.remove('active'); //清空所有按鈕樣式
+  });
+  
+
+  PageBtns.forEach(pgbtn=>{
+    if(pgbtn.value == CurrentPage){
+      pgbtn.classList.add('active');
+    }
+  })  //符合頁數的按鈕樣式生效
+
   ProductList.innerHTML = CardsHTML;
 }
 
@@ -54,7 +66,6 @@ function ProductCard(CardToShow) {
               </figcaption>
               <button class="lg-btn w-full">加入購物車</button>
             </li>`;
-  // console.log(Card);
 
   return Card;
 }
@@ -74,8 +85,13 @@ function setItemsPerPage() {
 // 判讀當前頁數
 
 PageSelect.addEventListener("click", function (event) {
-  const PageValue = event.target.closest("button")?.value;
+  
+  let TargetBtn = event.target.closest('button');
+  const PageValue = TargetBtn?.value; //第幾頁
+
+
   let TargetPage = CurrentPage;
+
   if (!PageValue) {
     return;
   }
@@ -100,6 +116,10 @@ PageSelect.addEventListener("click", function (event) {
     CurrentPage = TargetPage;
     showPage(CurrentPage);
   }
+  
+
+  
+
 });
 
 // 判讀視窗大小
@@ -131,6 +151,7 @@ SeriesSelect.addEventListener("click", function (event) {
       return product.series === SeriesValue;
     });
   }
+  CurrentPage = 1;
   showPage(CurrentPage);
 });
 
