@@ -21,6 +21,18 @@ function showPage(CurrentPage) {
   renderProductsList(PageData);
 }
 
+
+// 功能：預設系列按鈕樣式
+function DefaultSeriesBtnCss(SeriesSelect){
+   let SeriesBtns = SeriesSelect.querySelectorAll('button');
+    SeriesBtns.forEach(btn=>{
+      if(btn.value == "所有甜點"){
+        console.log(btn.value);
+        btn.classList.add('active');
+      }
+  });
+}
+
 // 功能：渲染產品列表
 function renderProductsList(DataToShow) {
   let CardsHTML = ""; //每次渲染都要先清空原顯示的商品項目，否則會一直疊加
@@ -29,7 +41,7 @@ function renderProductsList(DataToShow) {
   });
 
   PageBtns.forEach(pgbtn => {
-    pgbtn.classList.remove('active'); //清空所有按鈕樣式
+    pgbtn.classList.remove('active'); //清空所有頁數按鈕樣式
   });
   
 
@@ -118,8 +130,6 @@ PageSelect.addEventListener("click", function (event) {
   }
   
 
-  
-
 });
 
 // 判讀視窗大小
@@ -135,11 +145,11 @@ SeriesSelect.addEventListener("click", function (event) {
   let TargetBtn = event.target;
   let SeriesBtns = SeriesSelect.querySelectorAll('button');
   SeriesBtns.forEach(btn=>{
-    btn.classList.remove('active')
+    btn.classList.remove('active') //清除所有類別按鈕樣式
   });
 
   let SeriesValue = TargetBtn.value;
-  TargetBtn.classList.add('active');
+  TargetBtn.classList.add('active'); // 所選類別樣式生效
   if (!SeriesValue) {
     return;
   }
@@ -157,4 +167,6 @@ SeriesSelect.addEventListener("click", function (event) {
 
 // 執行區
 
+
 showPage(CurrentPage);
+DefaultSeriesBtnCss(SeriesSelect);
